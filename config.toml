@@ -1,7 +1,7 @@
 baseURL = "https://anshusoni.github.io/javaops/"
 languageCode = "en-us"
 title = "JavaOps"
-theme = "PaperMod"
+theme = "javaops-theme"
 
 [pagination]
   pagerSize = 5
