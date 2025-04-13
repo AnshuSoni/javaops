@@ -1,0 +1,22 @@
+baseURL = "https://anshusoni.github.io/javaops/"
+languageCode = "en-us"
+title = "JavaOps"
+theme = "PaperMod"
+paginate = 5
+
+[params]
+  author = "Anshu Soni"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  defaultTheme = "auto"
+  description = "JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security."
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
