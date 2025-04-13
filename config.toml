@@ -2,7 +2,9 @@ baseURL = "https://anshusoni.github.io/javaops/"
 languageCode = "en-us"
 title = "JavaOps"
 theme = "PaperMod"
-paginate = 5
+
+[pagination]
+  pagerSize = 5
 
 [params]
   author = "Anshu Soni"
