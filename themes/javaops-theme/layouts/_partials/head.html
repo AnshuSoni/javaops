@@ -152,6 +152,5 @@
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
 {{- template "_partials/templates/opengraph.html" . }}
-{{- template "_partials/templates/twitter_cards.html" . }}
 {{- template "_partials/templates/schema_json.html" . }}
 {{- end -}}
