@@ -18,8 +18,8 @@ jobs:
       - name: ⚙️ Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'v0.145.0' # Use the latest version or match your local
-          extended: false
+          hugo-version: '0.145.0' # Use the latest version or match your local
+          extended: true
 
       - name: 🛠 Build site
         run: hugo --minify
