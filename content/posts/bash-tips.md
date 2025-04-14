@@ -115,4 +115,18 @@ echo "Doing something" > "$TMPFILE"
 
 Avoid naming collisions and handle temp data safely.
 
+## 1️⃣1️⃣ Find files larger than 100 MB
+
+```bash
+# to see in current directory
+find . -type f -size +100M -exec ls -lh {} \;
+
+# to see in root
+find / -type f -size +100M -exec ls -lh {} \;
+
+# to see in /path/to/dir
+find /path/to/dir -type f -size +100M -exec ls -lh {} \;
+
+```
+
 
