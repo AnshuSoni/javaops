@@ -21,8 +21,8 @@ jobs:
           hugo-version: '0.145.0' # Use the latest version or match your local
           extended: true
 
-      - name: 🛠 Build site
-        run: hugo --minify
+      # - name: 🛠 Build site
+      #   run: hugo --minify
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
