@@ -18,7 +18,7 @@ jobs:
       - name: ⚙️ Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'v0.145.0-666444f0a52132f9fec9f71cf25b441cc6a4f355+extended' # Use the latest version or match your local
+          hugo-version: 'v0.145.0-666444f0a52132f9fec9f71cf25b441cc6a4f355' # Use the latest version or match your local
           extended: true
 
       - name: 🛠 Build site
