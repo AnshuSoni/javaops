@@ -1,11 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bash on JavaOps</title><link>https://anshusoni.github.io/javaops/tags/bash/</link><description>Recent content in Bash on JavaOps</description><generator>Hugo -- 0.145.0</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://anshusoni.github.io/javaops/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>10 Bash Scripting Tips for Everyday DevOps</title><link>https://anshusoni.github.io/javaops/posts/bash-tips/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/posts/bash-tips/</guid><description>&lt;p>Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you&amp;rsquo;re automating deployments, setting up environments, or writing health checks, here are &lt;strong>10 useful Bash tips and tricks&lt;/strong> to level up your scripting game.&lt;/p>
-&lt;hr>
-&lt;h2 id="1-set--e-and--u-for-safer-scripts">1️⃣ Set &lt;code>-e&lt;/code> and &lt;code>-u&lt;/code> for Safer Scripts&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/bash
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>set -eu
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>-e: Exit on error&lt;/li>
-&lt;li>-u: Treat unset variables as errors&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>Use this at the top of your scripts for better safety.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bash on JavaOps</title>
+    <link>http://localhost:1313/javaops/tags/bash/</link>
+    <description>Recent content in Bash on JavaOps</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/javaops/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 Bash Scripting Tips for Everyday DevOps</title>
+      <link>http://localhost:1313/javaops/posts/bash-tips/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/bash-tips/</guid>
+      <description>&lt;p&gt;Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you&amp;rsquo;re automating deployments, setting up environments, or writing health checks, here are &lt;strong&gt;10 useful Bash tips and tricks&lt;/strong&gt; to level up your scripting game.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-set--e-and--u-for-safer-scripts&#34;&gt;1️⃣ Set &lt;code&gt;-e&lt;/code&gt; and &lt;code&gt;-u&lt;/code&gt; for Safer Scripts&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;set -eu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;-e: Exit on error&lt;/li&gt;
+&lt;li&gt;-u: Treat unset variables as errors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use this at the top of your scripts for better safety.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tags on JavaOps</title><link>https://anshusoni.github.io/javaops/tags/</link><description>Recent content in Tags on JavaOps</description><generator>Hugo -- 0.145.0</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 12:00:00 +0530</lastBuildDate><atom:link href="https://anshusoni.github.io/javaops/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello</title><link>https://anshusoni.github.io/javaops/tags/hello/</link><pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate><guid>https://anshusoni.github.io/javaops/tags/hello/</guid><description/></item><item><title>Intro</title><link>https://anshusoni.github.io/javaops/tags/intro/</link><pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate><guid>https://anshusoni.github.io/javaops/tags/intro/</guid><description/></item><item><title>Bash</title><link>https://anshusoni.github.io/javaops/tags/bash/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/tags/bash/</guid><description/></item><item><title>Devops</title><link>https://anshusoni.github.io/javaops/tags/devops/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/tags/devops/</guid><description/></item><item><title>Linux</title><link>https://anshusoni.github.io/javaops/tags/linux/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/tags/linux/</guid><description/></item><item><title>Scripting</title><link>https://anshusoni.github.io/javaops/tags/scripting/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/tags/scripting/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on JavaOps</title>
+    <link>http://localhost:1313/javaops/tags/</link>
+    <description>Recent content in Tags on JavaOps</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Apr 2025 12:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/javaops/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/javaops/tags/hello/</link>
+      <pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/javaops/tags/hello/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/javaops/tags/intro/</link>
+      <pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/javaops/tags/intro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/javaops/tags/bash/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>http://localhost:1313/javaops/tags/devops/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/javaops/tags/linux/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scripting</title>
+      <link>http://localhost:1313/javaops/tags/scripting/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/scripting/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
