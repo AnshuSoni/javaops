@@ -6,8 +6,15 @@
     <description>Recent content in Bash on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
+      <link>http://localhost:1313/javaops/posts/bashrc/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/bashrc/</guid>
+      <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
+    </item>
     <item>
       <title>10 Bash Scripting Tips for Everyday DevOps</title>
       <link>http://localhost:1313/javaops/posts/bash-tips/</link>

@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/javaops/posts/bashrc/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/bash/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/dotfiles/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/linux/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/linux/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/shell/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/shell/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/terminal/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/javaops/tags/hello/</loc>
     <lastmod>2025-04-13T12:00:00+05:30</lastmod>
   </url><url>
@@ -11,30 +47,13 @@
     <loc>http://localhost:1313/javaops/tags/intro/</loc>
     <lastmod>2025-04-13T12:00:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javaops/</loc>
-    <lastmod>2025-04-13T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/posts/</loc>
-    <lastmod>2025-04-13T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/tags/</loc>
-    <lastmod>2025-04-13T12:00:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/javaops/posts/bash-tips/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/tags/bash/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/tags/devops/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javaops/tags/linux/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/javaops/tags/scripting/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/categories/</loc>
   </url>
 </urlset>
