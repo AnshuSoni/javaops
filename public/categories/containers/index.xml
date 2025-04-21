@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Containers on JavaOps</title>
+    <link>http://localhost:1313/javaops/categories/containers/</link>
+    <description>Recent content in Containers on JavaOps</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/javaops/categories/containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Init Systems in Containers: Why systemd Isn’t Always There</title>
+      <link>http://localhost:1313/javaops/posts/init-systems-in-containers/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/init-systems-in-containers/</guid>
+      <description>Why most Docker containers don’t run systemd and what that means for process management inside containers.</description>
+    </item>
+  </channel>
+</rss>

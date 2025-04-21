@@ -6,13 +6,27 @@
     <description>Recent content in Linux on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Init Systems in Containers: Why systemd Isn’t Always There</title>
+      <link>http://localhost:1313/javaops/posts/init-systems-in-containers/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/init-systems-in-containers/</guid>
+      <description>Why most Docker containers don’t run systemd and what that means for process management inside containers.</description>
+    </item>
+    <item>
+      <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
+      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
+      <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
+    </item>
+    <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>http://localhost:1313/javaops/posts/bashrc/</link>
+      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/bashrc/</guid>
+      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
     <item>

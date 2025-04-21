@@ -6,8 +6,15 @@
     <description>Recent content in Devops on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
+      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
+      <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
+    </item>
     <item>
       <title>10 Bash Scripting Tips for Everyday DevOps</title>
       <link>http://localhost:1313/javaops/posts/bash-tips/</link>

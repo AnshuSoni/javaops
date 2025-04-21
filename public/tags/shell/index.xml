@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/javaops/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>http://localhost:1313/javaops/posts/bashrc/</link>
+      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/bashrc/</guid>
+      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
   </channel>

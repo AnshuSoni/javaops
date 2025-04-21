@@ -6,8 +6,78 @@
     <description>Recent content in Tags on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/javaops/tags/containers/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>http://localhost:1313/javaops/tags/devops/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/javaops/tags/docker/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Init</title>
+      <link>http://localhost:1313/javaops/tags/init/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/init/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/javaops/tags/linux/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Screen</title>
+      <link>http://localhost:1313/javaops/tags/screen/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/screen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssh</title>
+      <link>http://localhost:1313/javaops/tags/ssh/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/ssh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systemd</title>
+      <link>http://localhost:1313/javaops/tags/systemd/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/systemd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>http://localhost:1313/javaops/tags/terminal/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tmux</title>
+      <link>http://localhost:1313/javaops/tags/tmux/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/tags/tmux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bash</title>
       <link>http://localhost:1313/javaops/tags/bash/</link>
@@ -23,45 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/javaops/tags/linux/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Shell</title>
       <link>http://localhost:1313/javaops/tags/shell/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/javaops/tags/shell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Terminal</title>
-      <link>http://localhost:1313/javaops/tags/terminal/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/tags/terminal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hello</title>
-      <link>http://localhost:1313/javaops/tags/hello/</link>
-      <pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/javaops/tags/hello/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Intro</title>
-      <link>http://localhost:1313/javaops/tags/intro/</link>
-      <pubDate>Sun, 13 Apr 2025 12:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/javaops/tags/intro/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>http://localhost:1313/javaops/tags/devops/</link>
-      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/tags/devops/</guid>
       <description></description>
     </item>
     <item>
