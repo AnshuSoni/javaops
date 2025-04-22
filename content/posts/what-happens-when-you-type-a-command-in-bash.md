@@ -59,18 +59,18 @@ If the command writes to standard output or standard error, the terminal display
 
 ```mermaid
 graph TD;
-    A[User types command] --> B[Readline processes input];
-    B --> C[Bash parses tokens];
-    C --> D{Built-in?};
-    D -- Yes --> E[Execute built-in];
-    D -- No --> F[Search $PATH];
-    F --> G[Found binary];
-    G --> H[Fork child process];
-    H --> I[Child execve() command];
-    I --> J[Command runs];
-    J --> K[Parent waits];
-    K --> L[Exit status collected];
-    L --> M[Output displayed];
+    A["User types command"] --> B["Readline processes input"];
+    B --> C["Bash parses tokens"];
+    C --> D{"Built-in?"};
+    D -- Yes --> E["Execute built-in"];
+    D -- No --> F["Search $PATH"];
+    F --> G["Found binary"];
+    G --> H["Fork child process"];
+    H --> I["Child execve() command"];
+    I --> J["Command runs"];
+    J --> K["Parent waits"];
+    K --> L["Exit status collected"];
+    L --> M["Output displayed"];
 ```
 
 Understanding these steps not only demystifies how Bash works but also empowers you to troubleshoot and optimize your shell usage more effectively. Next time you type a command, you'll know the intricate ballet happening behind the scenes.

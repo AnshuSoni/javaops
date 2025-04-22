@@ -154,23 +154,32 @@
 <p>If the command writes to standard output or standard error, the terminal displays the results directly. Bash itself doesn’t handle output redirection unless you explicitly use it (e.g., <code>ls -l &gt; output.txt</code>).</p>
 <hr>
 <h3 id="summary-flow">Summary Flow:<a hidden class="anchor" aria-hidden="true" href="#summary-flow">#</a></h3>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD;
-    A[User types command] --&gt; B[Readline processes input];
-    B --&gt; C[Bash parses tokens];
-    C --&gt; D{Built-in?};
-    D -- Yes --&gt; E[Execute built-in];
-    D -- No --&gt; F[Search $PATH];
-    F --&gt; G[Found binary];
-    G --&gt; H[Fork child process];
-    H --&gt; I[Child execve() command];
-    I --&gt; J[Command runs];
-    J --&gt; K[Parent waits];
-    K --&gt; L[Exit status collected];
-    L --&gt; M[Output displayed];
-</code></pre><p>Understanding these steps not only demystifies how Bash works but also empowers you to troubleshoot and optimize your shell usage more effectively. Next time you type a command, you&rsquo;ll know the intricate ballet happening behind the scenes.</p>
+<div class="mermaid">graph TD;
+    A["User types command"] --> B["Readline processes input"];
+    B --> C["Bash parses tokens"];
+    C --> D{"Built-in?"};
+    D -- Yes --> E["Execute built-in"];
+    D -- No --> F["Search $PATH"];
+    F --> G["Found binary"];
+    G --> H["Fork child process"];
+    H --> I["Child execve() command"];
+    I --> J["Command runs"];
+    J --> K["Parent waits"];
+    K --> L["Exit status collected"];
+    L --> M["Output displayed"];
+  </div>
+  
+  <p>Understanding these steps not only demystifies how Bash works but also empowers you to troubleshoot and optimize your shell usage more effectively. Next time you type a command, you&rsquo;ll know the intricate ballet happening behind the scenes.</p>
 
 
   </div>
+
+  
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  
 
   <footer class="post-footer">
     <ul class="post-tags">
