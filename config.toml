@@ -4,10 +4,10 @@ title = "JavaOps"
 theme = "javaops-theme"
 
 [pagination]
-  pagerSize = 5
+  pagerSize = 10
 
 [params]
-  author = "Anshu Soni"
+  author = "Abhishek Soni"
   ShowReadingTime = true
   ShowShareButtons = true
   defaultTheme = "auto"
