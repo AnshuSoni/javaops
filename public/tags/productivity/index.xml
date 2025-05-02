@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Productivity on JavaOps</title>
+    <link>http://localhost:1313/javaops/tags/productivity/</link>
+    <description>Recent content in Productivity on JavaOps</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Apr 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/javaops/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cool Vim Tips and Tricks for Developers</title>
+      <link>http://localhost:1313/javaops/posts/vim-tips/</link>
+      <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/vim-tips/</guid>
+      <description>Boost your productivity with these essential Vim tips, tricks, and shortcuts.</description>
+    </item>
+  </channel>
+</rss>
