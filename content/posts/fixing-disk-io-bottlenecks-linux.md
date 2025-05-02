@@ -1,6 +1,6 @@
 ---
 title: "Fixing Disk I/O Bottlenecks and Latency on Linux"
-date: 2025-05-03
+date: 2025-05-01
 description: Learn how to identify and resolve disk I/O bottlenecks on Linux systems using practical tools and real-world troubleshooting techniques.
 tags: ["Linux", "Performance", "Disk I/O", "Troubleshooting", "Sysadmin"]
 ---

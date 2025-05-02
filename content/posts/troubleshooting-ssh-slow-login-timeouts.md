@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures"
-date: 2025-05-03
+date: 2025-05-01
 description: A practical guide to diagnosing and fixing common SSH connection issues on Linux servers, including timeouts, slow logins, and authentication errors.
 tags: ["Linux", "SSH", "Troubleshooting", "DevOps", "Security"]
 ---
