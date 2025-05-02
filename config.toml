@@ -2,6 +2,7 @@ baseURL = "https://anshusoni.github.io/javaops/"
 languageCode = "en-us"
 title = "JavaOps"
 theme = "javaops-theme"
+googleAnalytics = "G-WNPLZQM7F0"
 
 [pagination]
   pagerSize = 10
