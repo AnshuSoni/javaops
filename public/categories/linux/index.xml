@@ -6,8 +6,15 @@
     <description>Recent content in Linux on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 11:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Multipath and Creating LVM over Multipath Devices</title>
+      <link>http://localhost:1313/javaops/posts/multipath-setup/</link>
+      <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/multipath-setup/</guid>
+      <description>Learn the basics of multipathing in Linux, and how to create a Logical Volume Manager (LVM) setup over multipath devices for performance and redundancy.</description>
+    </item>
     <item>
       <title>Init Systems in Containers: Why systemd Isn’t Always There</title>
       <link>http://localhost:1313/javaops/posts/init-systems-in-containers/</link>

@@ -2,35 +2,113 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/javaops/</loc>
+    <lastmod>2025-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/</loc>
+    <lastmod>2025-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/diagnosing-high-load/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/linux/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/monitoring/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/performance/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/sysadmin/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/</loc>
+    <lastmod>2025-04-29T19:47:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/vim-tips/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/development/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/productivity/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/tips/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/tools/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/vim/</loc>
+    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/linux/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/lvm/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/multipath/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/storage/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/storage/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/multipath-setup/</loc>
+    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/dns/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/dns-internal-working/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/networking/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/networking/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/security/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/security/</loc>
+    <lastmod>2025-04-28T10:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/devops/</loc>
+    <lastmod>2025-04-28T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/performance-monitoring/</loc>
+    <lastmod>2025-04-28T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</loc>
+    <lastmod>2025-04-28T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/categories/sysadmin/</loc>
+    <lastmod>2025-04-28T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/javaops/tags/bash/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/tags/cli/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javaops/</loc>
-    <lastmod>2025-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/tags/linux/</loc>
-    <lastmod>2025-04-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/javaops/tags/operating-system/</loc>
-    <lastmod>2025-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/posts/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/tags/shell/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javaops/tags/</loc>
-    <lastmod>2025-04-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/categories/</loc>
-    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/categories/containers/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
@@ -41,9 +119,6 @@
     <loc>http://localhost:1313/javaops/tags/devops/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javaops/categories/devops/</loc>
-    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/javaops/tags/docker/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,9 +126,6 @@
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/posts/init-systems-in-containers/</loc>
-    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/categories/linux/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/categories/productivity/</loc>
@@ -72,9 +144,6 @@
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/tags/tmux/</loc>
-    <lastmod>2025-04-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javaops/categories/tools/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javaops/posts/tmux-vs-screen/</loc>

@@ -2,7 +2,6 @@ baseURL = "https://anshusoni.github.io/javaops/"
 languageCode = "en-us"
 title = "JavaOps"
 theme = "javaops-theme"
-googleAnalytics = "G-WNPLZQM7F0"
 
 [pagination]
   pagerSize = 10
@@ -13,6 +12,7 @@ googleAnalytics = "G-WNPLZQM7F0"
   ShowShareButtons = true
   defaultTheme = "auto"
   description = "JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security."
+  GoogleAnalyticsID = "G-WNPLZQM7F0"
 
 [[menu.main]]
   name = "Home"

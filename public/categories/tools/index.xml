@@ -6,8 +6,15 @@
     <description>Recent content in Tools on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cool Vim Tips and Tricks for Developers</title>
+      <link>http://localhost:1313/javaops/posts/vim-tips/</link>
+      <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/vim-tips/</guid>
+      <description>Boost your productivity with these essential Vim tips, tricks, and shortcuts.</description>
+    </item>
     <item>
       <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
       <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>

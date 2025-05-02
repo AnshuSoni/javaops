@@ -6,8 +6,43 @@
     <description>Recent content in Posts on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 19:47:45 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diagnosing High Load: A Step-by-Step Troubleshooting Guide</title>
+      <link>http://localhost:1313/javaops/posts/diagnosing-high-load/</link>
+      <pubDate>Tue, 29 Apr 2025 19:47:45 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/diagnosing-high-load/</guid>
+      <description>Learn how to identify and fix high system load issues on a Linux server with this practical, step-by-step guide.</description>
+    </item>
+    <item>
+      <title>Cool Vim Tips and Tricks for Developers</title>
+      <link>http://localhost:1313/javaops/posts/vim-tips/</link>
+      <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/vim-tips/</guid>
+      <description>Boost your productivity with these essential Vim tips, tricks, and shortcuts.</description>
+    </item>
+    <item>
+      <title>Understanding Multipath and Creating LVM over Multipath Devices</title>
+      <link>http://localhost:1313/javaops/posts/multipath-setup/</link>
+      <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/multipath-setup/</guid>
+      <description>Learn the basics of multipathing in Linux, and how to create a Logical Volume Manager (LVM) setup over multipath devices for performance and redundancy.</description>
+    </item>
+    <item>
+      <title>How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks</title>
+      <link>http://localhost:1313/javaops/posts/dns-internal-working/</link>
+      <pubDate>Mon, 28 Apr 2025 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/dns-internal-working/</guid>
+      <description>Explore the internal workings of DNS, the roles of primary and secondary servers, DNS delegation, poisoning, common DNS attacks, and utilities to debug DNS issues.</description>
+    </item>
+    <item>
+      <title>Quick Intro to iostat, vmstat, and netstat for Performance Checks</title>
+      <link>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</link>
+      <pubDate>Mon, 28 Apr 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</guid>
+      <description>Learn how to quickly use iostat, vmstat, and netstat to perform basic system performance checks.</description>
+    </item>
     <item>
       <title>What Happens When You Type a Command in Bash?</title>
       <link>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>

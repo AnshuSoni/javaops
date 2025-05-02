@@ -9,7 +9,7 @@
 <title>JavaOps</title>
 
 <meta name="description" content="JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security.">
-<meta name="author" content="Anshu Soni">
+<meta name="author" content="Abhishek Soni">
 <link rel="canonical" href="http://localhost:1313/javaops/">
 <link crossorigin="anonymous" href="/javaops/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/javaops/favicon.ico">
@@ -58,6 +58,15 @@
 
     </style>
 </noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNPLZQM7F0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WNPLZQM7F0');
+</script>
+
 </head>
 
 <body class="list" id="top">
@@ -117,6 +126,84 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Diagnosing High Load: A Step-by-Step Troubleshooting Guide
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>High system load on a Linux server can lead to sluggish performance, dropped connections, or even complete system freezes. This guide walks you through a systematic approach to identifying and resolving high load issues.
+🔍 Step 1: Understand What “Load” Means System load represents the average number of processes that are either in a runnable or uninterruptible state. It’s different from CPU usage. A load of 1.0 on a single-core system means full utilization; on a 4-core system, it means 25%.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-29 19:47:45 +0000 UTC'>April 29, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
+  <a class="entry-link" aria-label="post link to Diagnosing High Load: A Step-by-Step Troubleshooting Guide" href="http://localhost:1313/javaops/posts/diagnosing-high-load/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cool Vim Tips and Tricks for Developers
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>⚡ Cool Vim Tips and Tricks Every Developer Should Know 1. Use Relative Line Numbers Enable relative line numbers for easy navigation:
+:set relativenumber Benefit: Jump 5 lines up/down with 5k / 5j without guessing.
+2. Split Windows like a Pro Horizontal split: :split filename Vertical split: :vsplit filename Navigate between splits:
+Ctrl-w h (left) Ctrl-w l (right) Ctrl-w k (up) Ctrl-w j (down) Benefit: Edit multiple files simultaneously!
+3. Faster Search and Highlight Search forward: /pattern Search backward: ?pattern Clear highlights: :noh Tip: After a search, use n to find next, N for previous.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-28 12:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
+  <a class="entry-link" aria-label="post link to Cool Vim Tips and Tricks for Developers" href="http://localhost:1313/javaops/posts/vim-tips/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Understanding Multipath and Creating LVM over Multipath Devices
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Storage systems in enterprise environments often require both performance and high availability. Multipathing and LVM are critical technologies used to achieve these goals.
+In this post, we’ll explain what multipathing is, how it works, and how to set up an LVM volume group on top of multipath devices.
+What is Multipath? Multipath provides multiple physical paths to connect storage devices (like SAN disks) to a server.
+Purpose:
+Redundancy: If one path fails, traffic automatically switches to another. Load Balancing: Distributes I/O across multiple paths, improving performance. Multipath configurations rely on device-mapper-multipath, which creates a single device node (/dev/mapper/mpatha, for example) that represents all physical paths.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-28 11:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
+  <a class="entry-link" aria-label="post link to Understanding Multipath and Creating LVM over Multipath Devices" href="http://localhost:1313/javaops/posts/multipath-setup/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Domain Name System (DNS) is the internet’s phonebook, translating domain names like example.com into IP addresses like 93.184.216.34. Under the hood, DNS is a complex and critical part of how the internet functions.
+In this post, we’ll cover how DNS works internally, the role of primary and secondary servers, DNS delegation, DNS poisoning, common DNS attacks, and introduce common Linux utilities to debug DNS.
+How DNS Works Internally When you type a URL into your browser, a multi-step process unfolds:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-28 10:30:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Abhishek Soni</footer>
+  <a class="entry-link" aria-label="post link to How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks" href="http://localhost:1313/javaops/posts/dns-internal-working/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Quick Intro to iostat, vmstat, and netstat for Performance Checks
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>System performance checks are crucial for troubleshooting and maintaining healthy servers. Three classic and lightweight tools for quickly assessing Linux system performance are iostat, vmstat, and netstat. In this post, we’ll take a brief look at what they do and how to use them.
+iostat iostat (Input/Output Statistics) provides information about CPU utilization and I/O statistics for devices and partitions.
+Install sudo apt install sysstat # Debian/Ubuntu sudo yum install sysstat # CentOS/RHEL Basic Usage iostat -xz 1 5 -x: Extended statistics -z: Suppress output for devices with zero activity 1 5: Report every 1 second, 5 times Useful Metrics:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-28 10:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
+  <a class="entry-link" aria-label="post link to Quick Intro to iostat, vmstat, and netstat for Performance Checks" href="http://localhost:1313/javaops/posts/vmstat-iostat-ss/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">What Happens When You Type a Command in Bash?
     </h2>
   </header>
@@ -126,7 +213,7 @@ So, I am asking you, what happens when you enter a command in your favourite ter
 When you type a command into the Bash shell and press Enter, it might seem like a simple action. But under the hood, a complex series of steps are set in motion. Let’s break down what really happens when you type a command like ls -l into Bash.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-22 00:00:00 +0000 UTC'>April 22, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Anshu Soni</footer>
+  <footer class="entry-footer"><span title='2025-04-22 00:00:00 +0000 UTC'>April 22, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
   <a class="entry-link" aria-label="post link to What Happens When You Type a Command in Bash?" href="http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/"></a>
 </article>
 
@@ -142,7 +229,7 @@ Why is it missing, and should you even care? Let’s break it down.
 What Is an Init System? In traditional Linux systems, the init system is the first process (PID 1) that starts during boot. Its job is to:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Anshu Soni</footer>
+  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
   <a class="entry-link" aria-label="post link to Init Systems in Containers: Why systemd Isn’t Always There" href="http://localhost:1313/javaops/posts/init-systems-in-containers/"></a>
 </article>
 
@@ -157,7 +244,7 @@ But which one should you choose? Let’s dive into why tmux is the better tool f
 Why You Need Persistent Sessions Imagine this:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Anshu Soni</footer>
+  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
   <a class="entry-link" aria-label="post link to Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?" href="http://localhost:1313/javaops/posts/tmux-vs-screen/"></a>
 </article>
 
@@ -169,7 +256,7 @@ Why You Need Persistent Sessions Imagine this:
   <div class="entry-content">
     <p>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-15 00:00:00 +0000 UTC'>April 15, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Anshu Soni</footer>
+  <footer class="entry-footer"><span title='2025-04-15 00:00:00 +0000 UTC'>April 15, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
   <a class="entry-link" aria-label="post link to .bashrc vs .bash_profile vs .profile — Explained for Developers" href="http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/"></a>
 </article>
 
@@ -183,7 +270,7 @@ Why You Need Persistent Sessions Imagine this:
 1️⃣ Set -e and -u for Safer Scripts #!/bin/bash set -eu -e: Exit on error -u: Treat unset variables as errors Use this at the top of your scripts for better safety.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-13 00:00:00 +0000 UTC'>April 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Anshu Soni</footer>
+  <footer class="entry-footer"><span title='2025-04-13 00:00:00 +0000 UTC'>April 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
   <a class="entry-link" aria-label="post link to 10 Bash Scripting Tips for Everyday DevOps" href="http://localhost:1313/javaops/posts/bash-tips/"></a>
 </article>
     </main>

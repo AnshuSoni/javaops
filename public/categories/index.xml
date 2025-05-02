@@ -6,8 +6,64 @@
     <description>Recent content in Categories on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development</title>
+      <link>http://localhost:1313/javaops/categories/development/</link>
+      <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>http://localhost:1313/javaops/categories/tools/</link>
+      <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/javaops/categories/linux/</link>
+      <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>http://localhost:1313/javaops/categories/storage/</link>
+      <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/javaops/categories/networking/</link>
+      <pubDate>Mon, 28 Apr 2025 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/javaops/categories/security/</link>
+      <pubDate>Mon, 28 Apr 2025 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/javaops/categories/devops/</link>
+      <pubDate>Mon, 28 Apr 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SysAdmin</title>
+      <link>http://localhost:1313/javaops/categories/sysadmin/</link>
+      <pubDate>Mon, 28 Apr 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/categories/sysadmin/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Containers</title>
       <link>http://localhost:1313/javaops/categories/containers/</link>
@@ -16,31 +72,10 @@
       <description></description>
     </item>
     <item>
-      <title>DevOps</title>
-      <link>http://localhost:1313/javaops/categories/devops/</link>
-      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/categories/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/javaops/categories/linux/</link>
-      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/categories/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Productivity</title>
       <link>http://localhost:1313/javaops/categories/productivity/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/javaops/categories/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tools</title>
-      <link>http://localhost:1313/javaops/categories/tools/</link>
-      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/categories/tools/</guid>
       <description></description>
     </item>
     <item>
