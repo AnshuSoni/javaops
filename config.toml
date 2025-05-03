@@ -23,3 +23,8 @@ theme = "javaops-theme"
   name = "Posts"
   url = "/posts/"
   weight = 2
+
+[[menu.main]]
+  name = "Apache Commons"
+  url = "/apache-commons/"
+  weight = 3

@@ -2,94 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on JavaOps</title>
-    <link>https://anshusoni.github.io/javaops/posts/</link>
+    <link>http://localhost:1313/javaops/posts/</link>
     <description>Recent content in Posts on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anshusoni.github.io/javaops/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/javaops/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Is My Cron Job Not Running? Debugging Silent Failures</title>
+      <link>http://localhost:1313/javaops/posts/why-is-my-cron-job-not-running/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/posts/why-is-my-cron-job-not-running/</guid>
+      <description>A practical guide to diagnosing and fixing silent cron job failures on Linux.</description>
+    </item>
     <item>
       <title>Fixing Disk I/O Bottlenecks and Latency on Linux</title>
-      <link>https://anshusoni.github.io/javaops/posts/fixing-disk-io-bottlenecks-linux/</link>
+      <link>http://localhost:1313/javaops/posts/fixing-disk-io-bottlenecks-linux/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/fixing-disk-io-bottlenecks-linux/</guid>
+      <guid>http://localhost:1313/javaops/posts/fixing-disk-io-bottlenecks-linux/</guid>
       <description>Learn how to identify and resolve disk I/O bottlenecks on Linux systems using practical tools and real-world troubleshooting techniques.</description>
     </item>
     <item>
       <title>Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures</title>
-      <link>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
+      <link>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
+      <guid>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
       <description>A practical guide to diagnosing and fixing common SSH connection issues on Linux servers, including timeouts, slow logins, and authentication errors.</description>
     </item>
     <item>
       <title>Diagnosing High Load: A Step-by-Step Troubleshooting Guide</title>
-      <link>https://anshusoni.github.io/javaops/posts/diagnosing-high-load/</link>
+      <link>http://localhost:1313/javaops/posts/diagnosing-high-load/</link>
       <pubDate>Tue, 29 Apr 2025 19:47:45 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/diagnosing-high-load/</guid>
+      <guid>http://localhost:1313/javaops/posts/diagnosing-high-load/</guid>
       <description>Learn how to identify and fix high system load issues on a Linux server with this practical, step-by-step guide.</description>
     </item>
     <item>
       <title>Cool Vim Tips and Tricks for Developers</title>
-      <link>https://anshusoni.github.io/javaops/posts/vim-tips/</link>
+      <link>http://localhost:1313/javaops/posts/vim-tips/</link>
       <pubDate>Mon, 28 Apr 2025 12:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/vim-tips/</guid>
+      <guid>http://localhost:1313/javaops/posts/vim-tips/</guid>
       <description>Boost your productivity with these essential Vim tips, tricks, and shortcuts.</description>
     </item>
     <item>
       <title>Understanding Multipath and Creating LVM over Multipath Devices</title>
-      <link>https://anshusoni.github.io/javaops/posts/multipath-setup/</link>
+      <link>http://localhost:1313/javaops/posts/multipath-setup/</link>
       <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/multipath-setup/</guid>
+      <guid>http://localhost:1313/javaops/posts/multipath-setup/</guid>
       <description>Learn the basics of multipathing in Linux, and how to create a Logical Volume Manager (LVM) setup over multipath devices for performance and redundancy.</description>
     </item>
     <item>
       <title>How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks</title>
-      <link>https://anshusoni.github.io/javaops/posts/dns-internal-working/</link>
+      <link>http://localhost:1313/javaops/posts/dns-internal-working/</link>
       <pubDate>Mon, 28 Apr 2025 10:30:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/dns-internal-working/</guid>
+      <guid>http://localhost:1313/javaops/posts/dns-internal-working/</guid>
       <description>Explore the internal workings of DNS, the roles of primary and secondary servers, DNS delegation, poisoning, common DNS attacks, and utilities to debug DNS issues.</description>
     </item>
     <item>
       <title>Quick Intro to iostat, vmstat, and netstat for Performance Checks</title>
-      <link>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</link>
+      <link>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</link>
       <pubDate>Mon, 28 Apr 2025 10:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</guid>
+      <guid>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</guid>
       <description>Learn how to quickly use iostat, vmstat, and netstat to perform basic system performance checks.</description>
     </item>
     <item>
       <title>What Happens When You Type a Command in Bash?</title>
-      <link>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
+      <link>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
       <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
+      <guid>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
       <description>Explore the inner workings of Bash and understand the journey a command takes from your keyboard to execution.</description>
     </item>
     <item>
       <title>Init Systems in Containers: Why systemd Isn’t Always There</title>
-      <link>https://anshusoni.github.io/javaops/posts/init-systems-in-containers/</link>
+      <link>http://localhost:1313/javaops/posts/init-systems-in-containers/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/init-systems-in-containers/</guid>
+      <guid>http://localhost:1313/javaops/posts/init-systems-in-containers/</guid>
       <description>Why most Docker containers don’t run systemd and what that means for process management inside containers.</description>
     </item>
     <item>
       <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
-      <link>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</link>
+      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</guid>
+      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
       <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
     </item>
     <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
+      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
+      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
     <item>
       <title>10 Bash Scripting Tips for Everyday DevOps</title>
-      <link>https://anshusoni.github.io/javaops/posts/bash-tips/</link>
+      <link>http://localhost:1313/javaops/posts/bash-tips/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/bash-tips/</guid>
+      <guid>http://localhost:1313/javaops/posts/bash-tips/</guid>
       <description>&lt;p&gt;Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you&amp;rsquo;re automating deployments, setting up environments, or writing health checks, here are &lt;strong&gt;10 useful Bash tips and tricks&lt;/strong&gt; to level up your scripting game.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-set--e-and--u-for-safer-scripts&#34;&gt;1️⃣ Set &lt;code&gt;-e&lt;/code&gt; and &lt;code&gt;-u&lt;/code&gt; for Safer Scripts&lt;/h2&gt;

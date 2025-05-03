@@ -2,178 +2,217 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://anshusoni.github.io/javaops/tags/devops/</loc>
+    <loc>http://localhost:1313/javaops/tags/apache-commons-lang/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/apache-commons/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/clean-code/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/cron/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/debugging/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/java/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/linux/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/null-safety/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/nullpointerexception/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/scheduling/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/apache-commons/apache-commons-string-utils/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/string/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/stringutils/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/sysadmin/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/posts/why-is-my-cron-job-not-running/</loc>
+    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javaops/tags/devops/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/disk-i/o/</loc>
+    <loc>http://localhost:1313/javaops/tags/disk-i/o/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/fixing-disk-io-bottlenecks-linux/</loc>
+    <loc>http://localhost:1313/javaops/posts/fixing-disk-io-bottlenecks-linux/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/</loc>
+    <loc>http://localhost:1313/javaops/tags/performance/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/linux/</loc>
+    <loc>http://localhost:1313/javaops/tags/security/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/performance/</loc>
+    <loc>http://localhost:1313/javaops/tags/ssh/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/</loc>
+    <loc>http://localhost:1313/javaops/tags/troubleshooting/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/security/</loc>
+    <loc>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/ssh/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/sysadmin/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/troubleshooting/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/diagnosing-high-load/</loc>
+    <loc>http://localhost:1313/javaops/posts/diagnosing-high-load/</loc>
     <lastmod>2025-04-29T19:47:45+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/monitoring/</loc>
+    <loc>http://localhost:1313/javaops/tags/monitoring/</loc>
     <lastmod>2025-04-29T19:47:45+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/</loc>
+    <loc>http://localhost:1313/javaops/categories/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/vim-tips/</loc>
+    <loc>http://localhost:1313/javaops/posts/vim-tips/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/development/</loc>
+    <loc>http://localhost:1313/javaops/categories/development/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/productivity/</loc>
+    <loc>http://localhost:1313/javaops/tags/productivity/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/tips/</loc>
+    <loc>http://localhost:1313/javaops/tags/tips/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/tools/</loc>
+    <loc>http://localhost:1313/javaops/categories/tools/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/vim/</loc>
+    <loc>http://localhost:1313/javaops/tags/vim/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/linux/</loc>
+    <loc>http://localhost:1313/javaops/categories/linux/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/lvm/</loc>
+    <loc>http://localhost:1313/javaops/tags/lvm/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/multipath/</loc>
+    <loc>http://localhost:1313/javaops/tags/multipath/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/storage/</loc>
+    <loc>http://localhost:1313/javaops/categories/storage/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/storage/</loc>
+    <loc>http://localhost:1313/javaops/tags/storage/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/multipath-setup/</loc>
+    <loc>http://localhost:1313/javaops/posts/multipath-setup/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/dns/</loc>
+    <loc>http://localhost:1313/javaops/tags/dns/</loc>
     <lastmod>2025-04-28T10:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/dns-internal-working/</loc>
+    <loc>http://localhost:1313/javaops/posts/dns-internal-working/</loc>
     <lastmod>2025-04-28T10:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/networking/</loc>
+    <loc>http://localhost:1313/javaops/categories/networking/</loc>
     <lastmod>2025-04-28T10:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/networking/</loc>
+    <loc>http://localhost:1313/javaops/tags/networking/</loc>
     <lastmod>2025-04-28T10:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/security/</loc>
+    <loc>http://localhost:1313/javaops/categories/security/</loc>
     <lastmod>2025-04-28T10:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/devops/</loc>
+    <loc>http://localhost:1313/javaops/categories/devops/</loc>
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/performance-monitoring/</loc>
+    <loc>http://localhost:1313/javaops/tags/performance-monitoring/</loc>
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</loc>
+    <loc>http://localhost:1313/javaops/posts/vmstat-iostat-ss/</loc>
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/sysadmin/</loc>
+    <loc>http://localhost:1313/javaops/categories/sysadmin/</loc>
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/bash/</loc>
+    <loc>http://localhost:1313/javaops/tags/bash/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/cli/</loc>
+    <loc>http://localhost:1313/javaops/tags/cli/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/operating-system/</loc>
+    <loc>http://localhost:1313/javaops/tags/operating-system/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/shell/</loc>
+    <loc>http://localhost:1313/javaops/tags/shell/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</loc>
+    <loc>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</loc>
     <lastmod>2025-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/containers/</loc>
+    <loc>http://localhost:1313/javaops/categories/containers/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/containers/</loc>
+    <loc>http://localhost:1313/javaops/tags/containers/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/docker/</loc>
+    <loc>http://localhost:1313/javaops/tags/docker/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/init/</loc>
+    <loc>http://localhost:1313/javaops/tags/init/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/init-systems-in-containers/</loc>
+    <loc>http://localhost:1313/javaops/posts/init-systems-in-containers/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/productivity/</loc>
+    <loc>http://localhost:1313/javaops/categories/productivity/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/screen/</loc>
+    <loc>http://localhost:1313/javaops/tags/screen/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/systemd/</loc>
+    <loc>http://localhost:1313/javaops/tags/systemd/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/terminal/</loc>
+    <loc>http://localhost:1313/javaops/tags/terminal/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/tmux/</loc>
+    <loc>http://localhost:1313/javaops/tags/tmux/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</loc>
+    <loc>http://localhost:1313/javaops/posts/tmux-vs-screen/</loc>
     <lastmod>2025-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</loc>
+    <loc>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/dotfiles/</loc>
+    <loc>http://localhost:1313/javaops/tags/dotfiles/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/shell/</loc>
+    <loc>http://localhost:1313/javaops/categories/shell/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/bash-tips/</loc>
+    <loc>http://localhost:1313/javaops/posts/bash-tips/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/scripting/</loc>
+    <loc>http://localhost:1313/javaops/tags/scripting/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url>
 </urlset>

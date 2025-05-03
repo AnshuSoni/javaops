@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>DevOps on JavaOps</title>
-    <link>https://anshusoni.github.io/javaops/tags/devops/</link>
+    <link>http://localhost:1313/javaops/tags/devops/</link>
     <description>Recent content in DevOps on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anshusoni.github.io/javaops/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/javaops/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures</title>
-      <link>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
+      <link>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
+      <guid>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
       <description>A practical guide to diagnosing and fixing common SSH connection issues on Linux servers, including timeouts, slow logins, and authentication errors.</description>
     </item>
     <item>
       <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
-      <link>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</link>
+      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</guid>
+      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
       <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
     </item>
     <item>
       <title>10 Bash Scripting Tips for Everyday DevOps</title>
-      <link>https://anshusoni.github.io/javaops/posts/bash-tips/</link>
+      <link>http://localhost:1313/javaops/posts/bash-tips/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/bash-tips/</guid>
+      <guid>http://localhost:1313/javaops/posts/bash-tips/</guid>
       <description>&lt;p&gt;Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you&amp;rsquo;re automating deployments, setting up environments, or writing health checks, here are &lt;strong&gt;10 useful Bash tips and tricks&lt;/strong&gt; to level up your scripting game.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-set--e-and--u-for-safer-scripts&#34;&gt;1️⃣ Set &lt;code&gt;-e&lt;/code&gt; and &lt;code&gt;-u&lt;/code&gt; for Safer Scripts&lt;/h2&gt;
