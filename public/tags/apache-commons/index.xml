@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Apache Commons on JavaOps</title>
+    <link>https://anshusoni.github.io/javaops/tags/apache-commons/</link>
+    <description>Recent content in Apache Commons on JavaOps</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 May 2025 10:38:00 +0530</lastBuildDate>
+    <atom:link href="https://anshusoni.github.io/javaops/tags/apache-commons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoring Directory Changes with Apache Commons VFS</title>
+      <link>https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/</link>
+      <pubDate>Sat, 10 May 2025 10:38:00 +0530</pubDate>
+      <guid>https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/</guid>
+      <description>&lt;h2 id=&#34;keeping-an-eye-on-your-files-directory-change-monitoring-with-apache-commons-vfs&#34;&gt;Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS&lt;/h2&gt;
+&lt;p&gt;I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

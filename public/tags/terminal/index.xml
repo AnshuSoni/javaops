@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Terminal on JavaOps</title>
-    <link>http://localhost:1313/javaops/tags/terminal/</link>
+    <link>https://anshusoni.github.io/javaops/tags/terminal/</link>
     <description>Recent content in Terminal on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/javaops/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anshusoni.github.io/javaops/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
-      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
+      <link>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</guid>
       <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
     </item>
     <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
+      <link>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
   </channel>

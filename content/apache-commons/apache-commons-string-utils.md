@@ -86,12 +86,12 @@ System.out.println(fullNameSafe);
 
 `StringUtils` offers much more than just `null-safe` operations. It provides a wealth of helpful methods for common string manipulations, including:
 
-**Case Manipulation**: `capitalize()`, `uncapitalize()`, `upperCase()`, `lowerCase()`
-**Whitespace Handling**: `trim()`, `strip()`, `deleteWhitespace()`
-**Substring Operations**: `substring()`, `left()`, `right()`, `mid()`
-**String Comparison**: `equals()`, `equalsIgnoreCase()`
-**Searching and Replacing**: `contains()`, `indexOf()`, `replace()`
-**Splitting and Joining**: `split()`, `join()`
+* **Case Manipulation**: `capitalize()`, `uncapitalize()`, `upperCase()`, `lowerCase()`
+* **Whitespace Handling**: `trim()`, `strip()`, `deleteWhitespace()`
+* **Substring Operations**: `substring()`, `left()`, `right()`, `mid()`
+* **String Comparison**: `equals()`, `equalsIgnoreCase()`
+* **Searching and Replacing**: `contains()`, `indexOf()`, `replace()`
+* **Splitting and Joining**: `split()`, `join()`
 
 ###### Examples on handling white spaces
 

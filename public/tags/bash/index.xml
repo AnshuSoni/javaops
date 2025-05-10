@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bash on JavaOps</title>
-    <link>http://localhost:1313/javaops/tags/bash/</link>
+    <link>https://anshusoni.github.io/javaops/tags/bash/</link>
     <description>Recent content in Bash on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/javaops/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anshusoni.github.io/javaops/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Happens When You Type a Command in Bash?</title>
-      <link>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
+      <link>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
       <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
       <description>Explore the inner workings of Bash and understand the journey a command takes from your keyboard to execution.</description>
     </item>
     <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
+      <link>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
     <item>
       <title>10 Bash Scripting Tips for Everyday DevOps</title>
-      <link>http://localhost:1313/javaops/posts/bash-tips/</link>
+      <link>https://anshusoni.github.io/javaops/posts/bash-tips/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/bash-tips/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/bash-tips/</guid>
       <description>&lt;p&gt;Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you&amp;rsquo;re automating deployments, setting up environments, or writing health checks, here are &lt;strong&gt;10 useful Bash tips and tricks&lt;/strong&gt; to level up your scripting game.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-set--e-and--u-for-safer-scripts&#34;&gt;1️⃣ Set &lt;code&gt;-e&lt;/code&gt; and &lt;code&gt;-u&lt;/code&gt; for Safer Scripts&lt;/h2&gt;

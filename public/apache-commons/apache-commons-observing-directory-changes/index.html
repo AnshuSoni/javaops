@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Monitoring Directory Changes with Apache Commons VFS | JavaOps</title>
+<meta name="keywords" content="java, apache commons, file system, monitoring, javaops">
+<meta name="description" content="Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS
+I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.">
+<meta name="author" content="Abhishek Soni">
+<link rel="canonical" href="https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/">
+<link crossorigin="anonymous" href="/javaops/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://anshusoni.github.io/javaops/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshusoni.github.io/javaops/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshusoni.github.io/javaops/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://anshusoni.github.io/javaops/apple-touch-icon.png">
+<link rel="mask-icon" href="https://anshusoni.github.io/javaops/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNPLZQM7F0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WNPLZQM7F0');
+</script>
+<meta property="og:url" content="https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/">
+  <meta property="og:site_name" content="JavaOps">
+  <meta property="og:title" content="Monitoring Directory Changes with Apache Commons VFS">
+  <meta property="og:description" content="Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="apache-commons">
+    <meta property="article:published_time" content="2025-05-10T10:38:00+05:30">
+    <meta property="article:modified_time" content="2025-05-10T10:38:00+05:30">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Apache Commons">
+    <meta property="article:tag" content="File System">
+    <meta property="article:tag" content="Monitoring">
+    <meta property="article:tag" content="Javaops">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Monitoring Directory Changes with Apache Commons VFS">
+<meta name="twitter:description" content="Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS
+I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Apache-Commons",
+      "item": "https://anshusoni.github.io/javaops/apache-commons/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Monitoring Directory Changes with Apache Commons VFS",
+      "item": "https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Monitoring Directory Changes with Apache Commons VFS",
+  "name": "Monitoring Directory Changes with Apache Commons VFS",
+  "description": "Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.\n",
+  "keywords": [
+    "java", "apache commons", "file system", "monitoring", "javaops"
+  ],
+  "articleBody": "Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.\nThanks to the great open source developers who contribute to Apache commons 🤠🥳.\nLets Start 🚀🚀🧑‍🚀🧑‍🚀🏃‍➡️\nIn the world of Java operations, keeping track of changes within directories is a common requirement. Whether you’re building a system that reacts to new file uploads, processes modified configuration files, or needs to audit file system activity, having a robust and efficient way to monitor directories is crucial.\nEnter Apache Commons VFS (Virtual File System), a powerful library that provides a unified interface for accessing various file systems (local, FTP, SFTP, etc.). Within its arsenal of tools, FileAlterationObserver stands out as a dedicated class for observing file and directory changes.\nThis post will guide you through the process of using FileAlterationObserver to monitor a local directory for events like file creation, deletion, and modification.\nSetting Up Your Project First things first, you’ll need to include the Apache Commons VFS dependency in your Maven or Gradle project.\nMaven:\norg.apache.commons commons-vfs2 2.9.0 Remember to sync your project after adding the dependency.\nThe Core Components Before diving into the code, let’s understand the key players involved:\nFileAlterationObserver: This is the main class responsible for monitoring a specific directory. You register FileAlterationListener instances with it to receive notifications about file system events. FileAlterationListener: An interface that defines methods to be called when file or directory events occur (e.g., fileCreated, fileDeleted, fileModified, directoryCreated, directoryDeleted). You’ll need to implement this interface to handle the events. FileObject: Represents a file or directory within the VFS framework. You’ll use this to specify the directory to be monitored. Implementing a Simple File System Monitor\nLet’s create a basic example that monitors a directory named watched_directory in your project’s root.\nimport org.apache.commons.vfs2.FileChangeEvent; import org.apache.commons.vfs2.FileListener; import org.apache.commons.vfs2.FileObject; import org.apache.commons.vfs2.FileSystemException; import org.apache.commons.vfs2.VFS; import org.apache.commons.vfs2.impl.DefaultFileMonitor; public class DirectoryMonitor { public static void main(String[] args) throws FileSystemException, InterruptedException { // The directory to monitor String directoryToWatch = \"file:///path/to/your/watched_directory\"; // Replace with your actual path // Create a FileObject for the directory FileObject watchedDir = VFS.getManager().resolveFile(directoryToWatch); // Create a FileListener to handle events FileListener listener = new FileListener() { @Override public void fileCreated(FileChangeEvent event) throws FileSystemException { System.out.println(\"File created: \" + event.getFile().getName().getBaseName()); } @Override public void fileDeleted(FileChangeEvent event) throws FileSystemException { System.out.println(\"File deleted: \" + event.getFile().getName().getBaseName()); } @Override public void fileChanged(FileChangeEvent event) throws FileSystemException { System.out.println(\"File modified: \" + event.getFile().getName().getBaseName()); } @Override public void directoryCreated(FileChangeEvent event) throws FileSystemException { System.out.println(\"Directory created: \" + event.getFile().getName().getBaseName()); } @Override public void directoryDeleted(FileChangeEvent event) throws FileSystemException { System.out.println(\"Directory deleted: \" + event.getFile().getName().getBaseName()); } @Override public void directoryChanged(FileChangeEvent event) throws FileSystemException { System.out.println(\"Directory modified: \" + event.getFile().getName().getBaseName()); } }; // Create a FileAlterationObserver and add the listener DefaultFileMonitor fileMonitor = new DefaultFileMonitor(listener); fileMonitor.addFile(watchedDir); // Start the file monitor fileMonitor.start(); System.out.println(\"Monitoring directory: \" + watchedDir.getName().getPath()); // Keep the main thread alive to continue monitoring Thread.sleep(Long.MAX_VALUE); // Stop the monitor (this part will likely not be reached in this example) // fileMonitor.stop(); } } Explanation:\ndirectoryToWatch: Replace \"file:///path/to/your/watched_directory\" with the actual absolute path to the directory you want to monitor. The \"file:///\" prefix is used for local file systems in VFS. VFS.getManager().resolveFile(directoryToWatch): This line uses the VFS manager to create a FileObject representing the directory to be watched. FileListener Implementation: We create an anonymous inner class that implements the FileListener interface. Each method (fileCreated, fileDeleted, fileChanged, etc.) is overridden to print a message to the console when the corresponding event occurs. You would replace these System.out.println statements with your actual event handling logic. DefaultFileMonitor: We instantiate a DefaultFileMonitor (which extends FileAlterationObserver) and register our FileListener with it using addFile(watchedDir). fileMonitor.start(): This starts the monitoring process in a separate thread. Thread.sleep(Long.MAX_VALUE): This line keeps the main thread alive indefinitely so that the FileAlterationObserver thread can continue monitoring. In a real-world application, you would have a more graceful way to manage the lifecycle of the monitor. fileMonitor.stop(): This line is commented out as the Thread.sleep(Long.MAX_VALUE) will prevent it from being reached in this simple example. In a real application, you’d call this when you want to stop monitoring. Running the Example Create a directory named watched_directory in your project’s root (or adjust the directoryToWatch path accordingly).\nRun the DirectoryMonitor class. Now, try creating, deleting, and modifying files and subdirectories within the watched_directory. You should see the corresponding messages printed to your console.\nBeyond the Basics This example provides a fundamental understanding of how to use FileAlterationObserver. Here are some ideas for extending it:\nFiltering Events: You can implement custom logic within your FileListener to filter events based on file names, extensions, or other criteria. Asynchronous Processing: For more complex tasks, you might want to use a thread pool or a message queue to handle the events asynchronously. Error Handling: Implement robust error handling to gracefully manage potential FileSystemExceptions. Monitoring Multiple Directories: You can create multiple FileAlterationObserver instances to monitor different directories simultaneously. Conclusion Apache Commons VFS’s FileAlterationObserver offers a clean and efficient way to monitor directory changes in Java. By implementing a FileAlterationListener, you can react to file system events and build powerful applications that are aware of their environment. This library abstracts away the complexities of platform-specific file system monitoring mechanisms, providing a consistent and reliable solution for your JavaOps needs.\n",
+  "wordCount" : "973",
+  "inLanguage": "en",
+  "datePublished": "2025-05-10T10:38:00+05:30",
+  "dateModified": "2025-05-10T10:38:00+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Abhishek Soni"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "JavaOps",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://anshusoni.github.io/javaops/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://anshusoni.github.io/javaops/" accesskey="h" title="JavaOps (Alt + H)">JavaOps</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://anshusoni.github.io/javaops/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://anshusoni.github.io/javaops/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://anshusoni.github.io/javaops/apache-commons/" title="Apache Commons">
+                    <span>Apache Commons</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Monitoring Directory Changes with Apache Commons VFS
+    </h1>
+    <div class="post-meta"><span title='2025-05-10 10:38:00 +0530 IST'>May 10, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Abhishek Soni
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="keeping-an-eye-on-your-files-directory-change-monitoring-with-apache-commons-vfs">Keeping an Eye on Your Files: Directory Change Monitoring with Apache Commons VFS<a hidden class="anchor" aria-hidden="true" href="#keeping-an-eye-on-your-files-directory-change-monitoring-with-apache-commons-vfs">#</a></h2>
+<p>I always wonder, how I can track the files changes, within a directory when I was learning java in my college. When I came to work, this horror story comes true, when I was officially a part of team, which analyses, lots of file processing, contents changed within the directory, and it is closely integrated with the Spring boot microservices. Initially I tried this solution to be fixed via Observer Pattern, but recently I tried Apache Commons VFS. Since, I am writing these days on Apache Commons, and the essential java utils, I found it worth sharing my internal notes to my readers.</p>
+<p>Thanks to the great open source developers who contribute to  Apache commons 🤠🥳.</p>
+<p>Lets Start 🚀🚀🧑‍🚀🧑‍🚀🏃‍➡️</p>
+<p><img alt="Darth Vader" loading="lazy" src="../../images/Darth_Vader_-_2007_Disney_Weekends.jpg"></p>
+<p>In the world of Java operations, keeping track of changes within directories is a common requirement. Whether you&rsquo;re building a system that reacts to new file uploads, processes modified configuration files, or needs to audit file system activity, having a robust and efficient way to monitor directories is crucial.</p>
+<p>Enter <strong>Apache Commons VFS (Virtual File System)</strong>, a powerful library that provides a unified interface for accessing various file systems (local, FTP, SFTP, etc.). Within its arsenal of tools, <code>FileAlterationObserver</code> stands out as a dedicated class for observing file and directory changes.</p>
+<p>This post will guide you through the process of using <code>FileAlterationObserver</code> to monitor a local directory for events like file creation, deletion, and modification.</p>
+<h3 id="setting-up-your-project">Setting Up Your Project<a hidden class="anchor" aria-hidden="true" href="#setting-up-your-project">#</a></h3>
+<p>First things first, you&rsquo;ll need to include the Apache Commons VFS dependency in your Maven or Gradle project.</p>
+<p><strong>Maven:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.commons<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>commons-vfs2<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;version&gt;</span>2.9.0<span style="color:#f92672">&lt;/version&gt;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Remember to sync your project after adding the dependency.</p>
+<p><strong>The Core Components</strong>
+Before diving into the code, let&rsquo;s understand the key players involved:</p>
+<ul>
+<li><code>FileAlterationObserver</code>: This is the main class responsible for monitoring a specific directory. You register <code>FileAlterationListener</code> instances with it to receive notifications about file system events.</li>
+<li><code>FileAlterationListener</code>: An interface that defines methods to be called when file or directory events occur (e.g., <code>fileCreated</code>, <code>fileDeleted</code>, <code>fileModified</code>, <code>directoryCreated</code>, <code>directoryDeleted</code>). You&rsquo;ll need to implement this interface to handle the events.</li>
+<li><code>FileObject</code>: Represents a file or directory within the VFS framework. You&rsquo;ll use this to specify the directory to be monitored.</li>
+</ul>
+<p><strong>Implementing a Simple File System Monitor</strong></p>
+<p>Let&rsquo;s create a basic example that monitors a directory named <code>watched_directory</code> in your project&rsquo;s root.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.FileChangeEvent;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.FileListener;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.FileObject;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.FileSystemException;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.VFS;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.apache.commons.vfs2.impl.DefaultFileMonitor;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DirectoryMonitor</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) <span style="color:#66d9ef">throws</span> FileSystemException, InterruptedException {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// The directory to monitor</span>
+</span></span><span style="display:flex;"><span>        String directoryToWatch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;file:///path/to/your/watched_directory&#34;</span>; <span style="color:#75715e">// Replace with your actual path</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create a FileObject for the directory</span>
+</span></span><span style="display:flex;"><span>        FileObject watchedDir <span style="color:#f92672">=</span> VFS.<span style="color:#a6e22e">getManager</span>().<span style="color:#a6e22e">resolveFile</span>(directoryToWatch);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create a FileListener to handle events</span>
+</span></span><span style="display:flex;"><span>        FileListener listener <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileListener() {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fileCreated</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;File created: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fileDeleted</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;File deleted: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fileChanged</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;File modified: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">directoryCreated</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Directory created: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">directoryDeleted</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Directory deleted: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">directoryChanged</span>(FileChangeEvent event) <span style="color:#66d9ef">throws</span> FileSystemException {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Directory modified: &#34;</span> <span style="color:#f92672">+</span> event.<span style="color:#a6e22e">getFile</span>().<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getBaseName</span>());
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Create a FileAlterationObserver and add the listener</span>
+</span></span><span style="display:flex;"><span>        DefaultFileMonitor fileMonitor <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DefaultFileMonitor(listener);
+</span></span><span style="display:flex;"><span>        fileMonitor.<span style="color:#a6e22e">addFile</span>(watchedDir);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Start the file monitor</span>
+</span></span><span style="display:flex;"><span>        fileMonitor.<span style="color:#a6e22e">start</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Monitoring directory: &#34;</span> <span style="color:#f92672">+</span> watchedDir.<span style="color:#a6e22e">getName</span>().<span style="color:#a6e22e">getPath</span>());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Keep the main thread alive to continue monitoring</span>
+</span></span><span style="display:flex;"><span>        Thread.<span style="color:#a6e22e">sleep</span>(Long.<span style="color:#a6e22e">MAX_VALUE</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Stop the monitor (this part will likely not be reached in this example)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// fileMonitor.stop();</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ol>
+<li><code>directoryToWatch</code>: Replace <code>&quot;file:///path/to/your/watched_directory&quot;</code> with the actual absolute path to the directory you want to monitor. The <code>&quot;file:///&quot;</code> prefix is used for local file systems in VFS.</li>
+<li><code>VFS.getManager().resolveFile(directoryToWatch)</code>: This line uses the VFS manager to create a FileObject representing the directory to be watched.</li>
+<li><code>FileListener Implementation</code>: We create an anonymous inner class that implements the <code>FileListener</code> interface. Each method (<code>fileCreated</code>, <code>fileDeleted</code>, <code>fileChanged</code>, etc.) is overridden to print a message to the console when the corresponding event occurs. You would replace these System.out.println statements with your actual event handling logic.</li>
+<li><code>DefaultFileMonitor</code>: We instantiate a <code>DefaultFileMonitor</code> (which extends <code>FileAlterationObserver</code>) and register our <code>FileListener</code> with it using <code>addFile(watchedDir)</code>.</li>
+<li><code>fileMonitor.start()</code>: This starts the monitoring process in a separate thread.</li>
+<li><code>Thread.sleep(Long.MAX_VALUE)</code>: This line keeps the main thread alive indefinitely so that the <code>FileAlterationObserver</code> thread can continue monitoring. In a real-world application, you would have a more graceful way to manage the lifecycle of the monitor.</li>
+<li><code>fileMonitor.stop()</code>: This line is commented out as the <code>Thread.sleep(Long.MAX_VALUE)</code> will prevent it from being reached in this simple example. In a real application, you&rsquo;d call this when you want to stop monitoring.</li>
+</ol>
+<p><strong>Running the Example</strong>
+Create a directory named <code>watched_directory</code> in your project&rsquo;s root (or adjust the <code>directoryToWatch</code> path accordingly).</p>
+<p><strong>Run the DirectoryMonitor class.</strong>
+Now, try creating, deleting, and modifying files and subdirectories within the <code>watched_directory</code>. You should see the corresponding messages printed to your console.</p>
+<p><strong>Beyond the Basics</strong>
+This example provides a fundamental understanding of how to use <code>FileAlterationObserver</code>. Here are some ideas for extending it:</p>
+<ul>
+<li><code>Filtering Events</code>: You can implement custom logic within your <code>FileListener</code> to filter events based on file names, extensions, or other criteria.</li>
+<li><code>Asynchronous Processing</code>: For more complex tasks, you might want to use a thread pool or a message queue to handle the events asynchronously.</li>
+<li><code>Error Handling</code>: Implement robust error handling to gracefully manage potential <code>FileSystemExceptions</code>.</li>
+<li><code>Monitoring Multiple Directories</code>: You can create multiple FileAlterationObserver instances to monitor different directories simultaneously.</li>
+</ul>
+<h3 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h3>
+<p>Apache Commons VFS&rsquo;s FileAlterationObserver offers a clean and efficient way to monitor directory changes in Java. By implementing a FileAlterationListener, you can react to file system events and build powerful applications that are aware of their environment. This library abstracts away the complexities of platform-specific file system monitoring mechanisms, providing a consistent and reliable solution for your JavaOps needs.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://anshusoni.github.io/javaops/tags/java/">Java</a></li>
+      <li><a href="https://anshusoni.github.io/javaops/tags/apache-commons/">Apache Commons</a></li>
+      <li><a href="https://anshusoni.github.io/javaops/tags/file-system/">File System</a></li>
+      <li><a href="https://anshusoni.github.io/javaops/tags/monitoring/">Monitoring</a></li>
+      <li><a href="https://anshusoni.github.io/javaops/tags/javaops/">Javaops</a></li>
+    </ul>
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on x"
+            href="https://x.com/intent/tweet/?text=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS&amp;url=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f&amp;hashtags=java%2capachecommons%2cfilesystem%2cmonitoring%2cjavaops">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f&amp;title=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS&amp;summary=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS&amp;source=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f&title=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on whatsapp"
+            href="https://api.whatsapp.com/send?text=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS%20-%20https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on telegram"
+            href="https://telegram.me/share/url?text=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS&amp;url=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Monitoring Directory Changes with Apache Commons VFS on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Monitoring%20Directory%20Changes%20with%20Apache%20Commons%20VFS&u=https%3a%2f%2fanshusoni.github.io%2fjavaops%2fapache-commons%2fapache-commons-observing-directory-changes%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://anshusoni.github.io/javaops/">JavaOps</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

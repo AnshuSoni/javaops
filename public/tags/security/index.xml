@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Security on JavaOps</title>
-    <link>http://localhost:1313/javaops/tags/security/</link>
+    <link>https://anshusoni.github.io/javaops/tags/security/</link>
     <description>Recent content in Security on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/javaops/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anshusoni.github.io/javaops/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures</title>
-      <link>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
+      <link>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/</guid>
       <description>A practical guide to diagnosing and fixing common SSH connection issues on Linux servers, including timeouts, slow logins, and authentication errors.</description>
     </item>
     <item>
       <title>How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks</title>
-      <link>http://localhost:1313/javaops/posts/dns-internal-working/</link>
+      <link>https://anshusoni.github.io/javaops/posts/dns-internal-working/</link>
       <pubDate>Mon, 28 Apr 2025 10:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/dns-internal-working/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/dns-internal-working/</guid>
       <description>Explore the internal workings of DNS, the roles of primary and secondary servers, DNS delegation, poisoning, common DNS attacks, and utilities to debug DNS issues.</description>
     </item>
   </channel>

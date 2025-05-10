@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cli on JavaOps</title>
-    <link>http://localhost:1313/javaops/tags/cli/</link>
+    <link>https://anshusoni.github.io/javaops/tags/cli/</link>
     <description>Recent content in Cli on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/javaops/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anshusoni.github.io/javaops/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Happens When You Type a Command in Bash?</title>
-      <link>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
+      <link>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</link>
       <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
+      <guid>https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/</guid>
       <description>Explore the inner workings of Bash and understand the journey a command takes from your keyboard to execution.</description>
     </item>
   </channel>
