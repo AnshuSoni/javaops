@@ -6,8 +6,24 @@
     <description>Recent content in SysAdmin on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Apr 2025 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://anshusoni.github.io/javaops/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keeping Your System Clean: Best Practices for Updates and Removing Orphan Packages in Debian</title>
+      <link>https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/</guid>
+      <description>&lt;p&gt;Keeping your Debian-based system clean and up-to-date is essential for security, stability, and performance. Over time, unnecessary or orphaned packages can accumulate, and outdated software may expose your system to vulnerabilities. This blog post covers essential practices to keep your system tidy and efficient.&lt;/p&gt;
+&lt;h2 id=&#34;-regular-system-updates&#34;&gt;🛠️ Regular System Updates&lt;/h2&gt;
+&lt;p&gt;Keeping your system updated ensures that security patches, bug fixes, and performance improvements are applied.&lt;/p&gt;
+&lt;h3 id=&#34;update-package-lists&#34;&gt;Update Package Lists&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;upgrade-installed-packages&#34;&gt;Upgrade Installed Packages&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;full-upgrade-handles-dependencies-and-removals&#34;&gt;Full Upgrade (Handles Dependencies and Removals)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt full-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Schedule regular updates, or use a tool like &lt;code&gt;cron&lt;/code&gt; or &lt;code&gt;unattended-upgrades&lt;/code&gt; for automation.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Quick Intro to iostat, vmstat, and netstat for Performance Checks</title>
       <link>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</link>

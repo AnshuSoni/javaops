@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://anshusoni.github.io/javaops/tags/apt/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/categories/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/debian/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/categories/linux/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/linux-tips/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/posts/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/categories/sysadmin/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/system-maintenance/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/</loc>
+    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/apache-commons/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
@@ -17,16 +50,10 @@
     <loc>https://anshusoni.github.io/javaops/tags/javaops/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/</loc>
-    <lastmod>2025-05-10T10:38:00+05:30</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/monitoring/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/</loc>
-    <lastmod>2025-05-10T10:38:00+05:30</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</loc>
@@ -48,9 +75,6 @@
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/nullpointerexception/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/posts/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/scheduling/</loc>
@@ -98,9 +122,6 @@
     <loc>https://anshusoni.github.io/javaops/posts/diagnosing-high-load/</loc>
     <lastmod>2025-04-29T19:47:45+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/</loc>
-    <lastmod>2025-04-28T12:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/posts/vim-tips/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
   </url><url>
@@ -118,9 +139,6 @@
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/vim/</loc>
     <lastmod>2025-04-28T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/linux/</loc>
-    <lastmod>2025-04-28T11:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/lvm/</loc>
     <lastmod>2025-04-28T11:00:00+00:00</lastmod>
@@ -159,9 +177,6 @@
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</loc>
-    <lastmod>2025-04-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/categories/sysadmin/</loc>
     <lastmod>2025-04-28T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/bash/</loc>

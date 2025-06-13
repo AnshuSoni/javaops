@@ -6,8 +6,36 @@
     <description>Recent content in Tags on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 May 2025 10:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://anshusoni.github.io/javaops/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APT</title>
+      <link>https://anshusoni.github.io/javaops/tags/apt/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/apt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debian</title>
+      <link>https://anshusoni.github.io/javaops/tags/debian/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/debian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux Tips</title>
+      <link>https://anshusoni.github.io/javaops/tags/linux-tips/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/linux-tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System Maintenance</title>
+      <link>https://anshusoni.github.io/javaops/tags/system-maintenance/</link>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/system-maintenance/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Apache Commons</title>
       <link>https://anshusoni.github.io/javaops/tags/apache-commons/</link>
