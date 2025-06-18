@@ -1,440 +1,46 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Posts | JavaOps</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - JavaOps">
-<meta name="author" content="Abhishek Soni">
-<link rel="canonical" href="https://anshusoni.github.io/javaops/posts/">
-<link crossorigin="anonymous" href="/javaops/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://anshusoni.github.io/javaops/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://anshusoni.github.io/javaops/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://anshusoni.github.io/javaops/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://anshusoni.github.io/javaops/apple-touch-icon.png">
-<link rel="mask-icon" href="https://anshusoni.github.io/javaops/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://anshusoni.github.io/javaops/posts/index.xml">
-<link rel="alternate" hreflang="en" href="https://anshusoni.github.io/javaops/posts/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNPLZQM7F0"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-WNPLZQM7F0');
-</script>
-<meta property="og:url" content="https://anshusoni.github.io/javaops/posts/">
-  <meta property="og:site_name" content="JavaOps">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://anshusoni.github.io/javaops/posts/"
-    }
-  ]
-}
-</script>
-</head>
-
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://anshusoni.github.io/javaops/" accesskey="h" title="JavaOps (Alt + H)">JavaOps</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://anshusoni.github.io/javaops/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://anshusoni.github.io/javaops/posts/" title="Posts">
-                    <span class="active">Posts</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://anshusoni.github.io/javaops/apache-commons/" title="Apache Commons">
-                    <span>Apache Commons</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Posts
-  </h1>
-</header>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Keeping Your System Clean: Best Practices for Updates and Removing Orphan Packages in Debian
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Keeping your Debian-based system clean and up-to-date is essential for security, stability, and performance. Over time, unnecessary or orphaned packages can accumulate, and outdated software may expose your system to vulnerabilities. This blog post covers essential practices to keep your system tidy and efficient.
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | JavaOps</title>
+<meta name=keywords content><meta name=description content="Posts - JavaOps"><meta name=author content="Abhishek Soni"><link rel=canonical href=https://anshusoni.github.io/javaops/posts/><link crossorigin=anonymous href=/javaops/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css integrity="sha256-bammPSWpYIvKL3+QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as=style><link rel=icon href=https://anshusoni.github.io/javaops/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://anshusoni.github.io/javaops/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://anshusoni.github.io/javaops/favicon-32x32.png><link rel=apple-touch-icon href=https://anshusoni.github.io/javaops/apple-touch-icon.png><link rel=mask-icon href=https://anshusoni.github.io/javaops/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://anshusoni.github.io/javaops/posts/index.xml><link rel=alternate hreflang=en href=https://anshusoni.github.io/javaops/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-WNPLZQM7F0"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-WNPLZQM7F0")</script><meta property="og:url" content="https://anshusoni.github.io/javaops/posts/"><meta property="og:site_name" content="JavaOps"><meta property="og:title" content="Posts"><meta property="og:description" content="JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security."><meta property="og:locale" content="en-us"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="JavaOps is a blog on Java, Linux, Kubernetes, DevOps, and Web Application Security."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://anshusoni.github.io/javaops/posts/"}]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://anshusoni.github.io/javaops/ accesskey=h title="JavaOps (Alt + H)">JavaOps</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://anshusoni.github.io/javaops/ title=Home><span>Home</span></a></li><li><a href=https://anshusoni.github.io/javaops/posts/ title=Posts><span class=active>Posts</span></a></li><li><a href=https://anshusoni.github.io/javaops/apache-commons/ title="Apache Commons"><span>Apache Commons</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Keeping Your System Clean: Best Practices for Updates and Removing Orphan Packages in Debian</h2></header><div class=entry-content><p>Keeping your Debian-based system clean and up-to-date is essential for security, stability, and performance. Over time, unnecessary or orphaned packages can accumulate, and outdated software may expose your system to vulnerabilities. This blog post covers essential practices to keep your system tidy and efficient.
 🛠️ Regular System Updates Keeping your system updated ensures that security patches, bug fixes, and performance improvements are applied.
 Update Package Lists sudo apt update Upgrade Installed Packages sudo apt upgrade Full Upgrade (Handles Dependencies and Removals) sudo apt full-upgrade Schedule regular updates, or use a tool like cron or unattended-upgrades for automation.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-06-13 00:00:00 +0000 UTC'>June 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Keeping Your System Clean: Best Practices for Updates and Removing Orphan Packages in Debian" href="https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Why Is My Cron Job Not Running? Debugging Silent Failures
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Why Is My Cron Job Not Running? Debugging Silent Failures Cron is a powerful scheduling utility on Unix-like systems, but it can be frustratingly silent when things go wrong. If your cron jobs are not executing as expected and you’re not seeing any errors, you’re not alone. This guide walks you through practical steps to debug and resolve common cron issues.
+...</p></div><footer class=entry-footer><span title='2025-06-13 00:00:00 +0000 UTC'>June 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Keeping Your System Clean: Best Practices for Updates and Removing Orphan Packages in Debian" href=https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Why Is My Cron Job Not Running? Debugging Silent Failures</h2></header><div class=entry-content><p>Why Is My Cron Job Not Running? Debugging Silent Failures Cron is a powerful scheduling utility on Unix-like systems, but it can be frustratingly silent when things go wrong. If your cron jobs are not executing as expected and you’re not seeing any errors, you’re not alone. This guide walks you through practical steps to debug and resolve common cron issues.
 ✅ Step 1: Check the Cron Syntax Cron jobs use a specific syntax:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-02 00:00:00 +0000 UTC'>May 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Why Is My Cron Job Not Running? Debugging Silent Failures" href="https://anshusoni.github.io/javaops/posts/why-is-my-cron-job-not-running/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fixing Disk I/O Bottlenecks and Latency on Linux
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Disk I/O bottlenecks can severely impact the performance of Linux systems, especially for databases, file servers, or virtualized environments. This post covers how to identify, analyze, and fix disk I/O performance issues with commonly available tools and best practices.
+...</p></div><footer class=entry-footer><span title='2025-05-02 00:00:00 +0000 UTC'>May 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Why Is My Cron Job Not Running? Debugging Silent Failures" href=https://anshusoni.github.io/javaops/posts/why-is-my-cron-job-not-running/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Fixing Disk I/O Bottlenecks and Latency on Linux</h2></header><div class=entry-content><p>Disk I/O bottlenecks can severely impact the performance of Linux systems, especially for databases, file servers, or virtualized environments. This post covers how to identify, analyze, and fix disk I/O performance issues with commonly available tools and best practices.
 🚨 Symptoms of Disk I/O Bottlenecks High system load (load average) with low CPU usage Sluggish application response iowait spikes in top Delayed file writes or reads Unresponsive processes during disk activity 🔍 Step 1: Identify the Bottleneck ✅ Use iostat iostat -xz 1 Key metrics to observe:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-01 00:00:00 +0000 UTC'>May 1, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Fixing Disk I/O Bottlenecks and Latency on Linux" href="https://anshusoni.github.io/javaops/posts/fixing-disk-io-bottlenecks-linux/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Secure Shell (SSH) is the lifeline for remote Linux system administration, but it can occasionally frustrate with timeouts, painfully slow logins, or cryptic authentication failures. This post explores the most common causes and practical fixes for SSH connectivity issues.
+...</p></div><footer class=entry-footer><span title='2025-05-01 00:00:00 +0000 UTC'>May 1, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Fixing Disk I/O Bottlenecks and Latency on Linux" href=https://anshusoni.github.io/javaops/posts/fixing-disk-io-bottlenecks-linux/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures</h2></header><div class=entry-content><p>Secure Shell (SSH) is the lifeline for remote Linux system administration, but it can occasionally frustrate with timeouts, painfully slow logins, or cryptic authentication failures. This post explores the most common causes and practical fixes for SSH connectivity issues.
 🔍 1. Diagnosing SSH Timeouts Symptom: SSH hangs for a long time and then fails or eventually connects.
-✅ Check Network Reachability ping &lt;hostname&gt; traceroute &lt;hostname&gt; telnet &lt;hostname&gt; 22 If port 22 is blocked by a firewall or dropped silently, SSH will hang. Use nmap -p 22 &lt;host&gt; to verify SSH port status. 🔥 Check Firewall Rules On server: sudo iptables -L -n sudo ufw status On cloud instances (AWS, Azure, etc.): check security groups or firewall rules. 🐢 2. Troubleshooting Slow SSH Logins Symptom: SSH connects, but login takes 5–30 seconds before showing the shell.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-01 00:00:00 +0000 UTC'>May 1, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures" href="https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Diagnosing High Load: A Step-by-Step Troubleshooting Guide
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>High system load on a Linux server can lead to sluggish performance, dropped connections, or even complete system freezes. This guide walks you through a systematic approach to identifying and resolving high load issues.
+✅ Check Network Reachability ping &lt;hostname> traceroute &lt;hostname> telnet &lt;hostname> 22 If port 22 is blocked by a firewall or dropped silently, SSH will hang. Use nmap -p 22 &lt;host> to verify SSH port status. 🔥 Check Firewall Rules On server: sudo iptables -L -n sudo ufw status On cloud instances (AWS, Azure, etc.): check security groups or firewall rules. 🐢 2. Troubleshooting Slow SSH Logins Symptom: SSH connects, but login takes 5–30 seconds before showing the shell.
+...</p></div><footer class=entry-footer><span title='2025-05-01 00:00:00 +0000 UTC'>May 1, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Troubleshooting SSH Timeouts, Slow Login, and Authentication Failures" href=https://anshusoni.github.io/javaops/posts/troubleshooting-ssh-slow-login-timeouts/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Diagnosing High Load: A Step-by-Step Troubleshooting Guide</h2></header><div class=entry-content><p>High system load on a Linux server can lead to sluggish performance, dropped connections, or even complete system freezes. This guide walks you through a systematic approach to identifying and resolving high load issues.
 🔍 Step 1: Understand What “Load” Means System load represents the average number of processes that are either in a runnable or uninterruptible state. It’s different from CPU usage. A load of 1.0 on a single-core system means full utilization; on a 4-core system, it means 25%.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-29 19:47:45 +0000 UTC'>April 29, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Diagnosing High Load: A Step-by-Step Troubleshooting Guide" href="https://anshusoni.github.io/javaops/posts/diagnosing-high-load/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cool Vim Tips and Tricks for Developers
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>⚡ Cool Vim Tips and Tricks Every Developer Should Know 1. Use Relative Line Numbers Enable relative line numbers for easy navigation:
+...</p></div><footer class=entry-footer><span title='2025-04-29 19:47:45 +0000 UTC'>April 29, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Diagnosing High Load: A Step-by-Step Troubleshooting Guide" href=https://anshusoni.github.io/javaops/posts/diagnosing-high-load/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Cool Vim Tips and Tricks for Developers</h2></header><div class=entry-content><p>⚡ Cool Vim Tips and Tricks Every Developer Should Know 1. Use Relative Line Numbers Enable relative line numbers for easy navigation:
 :set relativenumber Benefit: Jump 5 lines up/down with 5k / 5j without guessing.
 2. Split Windows like a Pro Horizontal split: :split filename Vertical split: :vsplit filename Navigate between splits:
 Ctrl-w h (left) Ctrl-w l (right) Ctrl-w k (up) Ctrl-w j (down) Benefit: Edit multiple files simultaneously!
 3. Faster Search and Highlight Search forward: /pattern Search backward: ?pattern Clear highlights: :noh Tip: After a search, use n to find next, N for previous.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-28 12:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Cool Vim Tips and Tricks for Developers" href="https://anshusoni.github.io/javaops/posts/vim-tips/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Understanding Multipath and Creating LVM over Multipath Devices
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Storage systems in enterprise environments often require both performance and high availability. Multipathing and LVM are critical technologies used to achieve these goals.
+...</p></div><footer class=entry-footer><span title='2025-04-28 12:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Cool Vim Tips and Tricks for Developers" href=https://anshusoni.github.io/javaops/posts/vim-tips/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Understanding Multipath and Creating LVM over Multipath Devices</h2></header><div class=entry-content><p>Storage systems in enterprise environments often require both performance and high availability. Multipathing and LVM are critical technologies used to achieve these goals.
 In this post, we’ll explain what multipathing is, how it works, and how to set up an LVM volume group on top of multipath devices.
 What is Multipath? Multipath provides multiple physical paths to connect storage devices (like SAN disks) to a server.
 Purpose:
 Redundancy: If one path fails, traffic automatically switches to another. Load Balancing: Distributes I/O across multiple paths, improving performance. Multipath configurations rely on device-mapper-multipath, which creates a single device node (/dev/mapper/mpatha, for example) that represents all physical paths.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-28 11:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Understanding Multipath and Creating LVM over Multipath Devices" href="https://anshusoni.github.io/javaops/posts/multipath-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Domain Name System (DNS) is the internet’s phonebook, translating domain names like example.com into IP addresses like 93.184.216.34. Under the hood, DNS is a complex and critical part of how the internet functions.
+...</p></div><footer class=entry-footer><span title='2025-04-28 11:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Understanding Multipath and Creating LVM over Multipath Devices" href=https://anshusoni.github.io/javaops/posts/multipath-setup/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks</h2></header><div class=entry-content><p>The Domain Name System (DNS) is the internet’s phonebook, translating domain names like example.com into IP addresses like 93.184.216.34. Under the hood, DNS is a complex and critical part of how the internet functions.
 In this post, we’ll cover how DNS works internally, the role of primary and secondary servers, DNS delegation, DNS poisoning, common DNS attacks, and introduce common Linux utilities to debug DNS.
 How DNS Works Internally When you type a URL into your browser, a multi-step process unfolds:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-28 10:30:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks" href="https://anshusoni.github.io/javaops/posts/dns-internal-working/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Quick Intro to iostat, vmstat, and netstat for Performance Checks
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>System performance checks are crucial for troubleshooting and maintaining healthy servers. Three classic and lightweight tools for quickly assessing Linux system performance are iostat, vmstat, and netstat. In this post, we’ll take a brief look at what they do and how to use them.
+...</p></div><footer class=entry-footer><span title='2025-04-28 10:30:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to How DNS Works Internally: Primary/Secondary Servers, Delegation, Poisoning, and Common Attacks" href=https://anshusoni.github.io/javaops/posts/dns-internal-working/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Quick Intro to iostat, vmstat, and netstat for Performance Checks</h2></header><div class=entry-content><p>System performance checks are crucial for troubleshooting and maintaining healthy servers. Three classic and lightweight tools for quickly assessing Linux system performance are iostat, vmstat, and netstat. In this post, we’ll take a brief look at what they do and how to use them.
 iostat iostat (Input/Output Statistics) provides information about CPU utilization and I/O statistics for devices and partitions.
 Install sudo apt install sysstat # Debian/Ubuntu sudo yum install sysstat # CentOS/RHEL Basic Usage iostat -xz 1 5 -x: Extended statistics -z: Suppress output for devices with zero activity 1 5: Report every 1 second, 5 times Useful Metrics:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-28 10:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Quick Intro to iostat, vmstat, and netstat for Performance Checks" href="https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What Happens When You Type a Command in Bash?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Today, I am writing one my favourite interview question about linux terminal, I have asked it for more than 5&#43; years of experience people, and trust me only two people could answer with confidence.
+...</p></div><footer class=entry-footer><span title='2025-04-28 10:00:00 +0000 UTC'>April 28, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Quick Intro to iostat, vmstat, and netstat for Performance Checks" href=https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>What Happens When You Type a Command in Bash?</h2></header><div class=entry-content><p>Today, I am writing one my favourite interview question about linux terminal, I have asked it for more than 5+ years of experience people, and trust me only two people could answer with confidence.
 So, I am asking you, what happens when you enter a command in your favourite terminal, bash 😊
 When you type a command into the Bash shell and press Enter, it might seem like a simple action. But under the hood, a complex series of steps are set in motion. Let’s break down what really happens when you type a command like ls -l into Bash.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-22 00:00:00 +0000 UTC'>April 22, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to What Happens When You Type a Command in Bash?" href="https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Init Systems in Containers: Why systemd Isn’t Always There
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When working with containers, especially Docker, one of the first surprises Linux users encounter is the absence of systemd, the popular init system used in most modern distributions.
+...</p></div><footer class=entry-footer><span title='2025-04-22 00:00:00 +0000 UTC'>April 22, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to What Happens When You Type a Command in Bash?" href=https://anshusoni.github.io/javaops/posts/what-happens-when-you-type-a-command-in-bash/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Init Systems in Containers: Why systemd Isn’t Always There</h2></header><div class=entry-content><p>When working with containers, especially Docker, one of the first surprises Linux users encounter is the absence of systemd, the popular init system used in most modern distributions.
 From my personal experience, we have spend 2 sleepless nights debugging an issue around this, so the questions is
 Why is it missing, and should you even care? Let’s break it down.
 What Is an Init System? In traditional Linux systems, the init system is the first process (PID 1) that starts during boot. Its job is to:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Init Systems in Containers: Why systemd Isn’t Always There" href="https://anshusoni.github.io/javaops/posts/init-systems-in-containers/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When working on remote servers over SSH, there’s always that dreaded moment when your connection drops, taking all your terminal sessions with it. Enter terminal multiplexers like screen and tmux, which let you keep your sessions alive even after disconnection.
+...</p></div><footer class=entry-footer><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Init Systems in Containers: Why systemd Isn’t Always There" href=https://anshusoni.github.io/javaops/posts/init-systems-in-containers/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</h2></header><div class=entry-content><p>When working on remote servers over SSH, there’s always that dreaded moment when your connection drops, taking all your terminal sessions with it. Enter terminal multiplexers like screen and tmux, which let you keep your sessions alive even after disconnection.
 But which one should you choose? Let’s dive into why tmux is the better tool for most developers and sysadmins, and how to get started with it.
 Why You Need Persistent Sessions Imagine this:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?" href="https://anshusoni.github.io/javaops/posts/tmux-vs-screen/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">.bashrc vs .bash_profile vs .profile — Explained for Developers
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-15 00:00:00 +0000 UTC'>April 15, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to .bashrc vs .bash_profile vs .profile — Explained for Developers" href="https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">10 Bash Scripting Tips for Everyday DevOps
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you’re automating deployments, setting up environments, or writing health checks, here are 10 useful Bash tips and tricks to level up your scripting game.
+...</p></div><footer class=entry-footer><span title='2025-04-18 00:00:00 +0000 UTC'>April 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?" href=https://anshusoni.github.io/javaops/posts/tmux-vs-screen/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>.bashrc vs .bash_profile vs .profile — Explained for Developers</h2></header><div class=entry-content><p>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</p></div><footer class=entry-footer><span title='2025-04-15 00:00:00 +0000 UTC'>April 15, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to .bashrc vs .bash_profile vs .profile — Explained for Developers" href=https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>10 Bash Scripting Tips for Everyday DevOps</h2></header><div class=entry-content><p>Bash scripting is a powerful skill for any developer or DevOps engineer. Whether you’re automating deployments, setting up environments, or writing health checks, here are 10 useful Bash tips and tricks to level up your scripting game.
 1️⃣ Set -e and -u for Safer Scripts #!/bin/bash set -eu -e: Exit on error -u: Treat unset variables as errors Use this at the top of your scripts for better safety.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-13 00:00:00 +0000 UTC'>April 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer>
-  <a class="entry-link" aria-label="post link to 10 Bash Scripting Tips for Everyday DevOps" href="https://anshusoni.github.io/javaops/posts/bash-tips/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://anshusoni.github.io/javaops/">JavaOps</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+...</p></div><footer class=entry-footer><span title='2025-04-13 00:00:00 +0000 UTC'>April 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Abhishek Soni</footer><a class=entry-link aria-label="post link to 10 Bash Scripting Tips for Everyday DevOps" href=https://anshusoni.github.io/javaops/posts/bash-tips/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://anshusoni.github.io/javaops/>JavaOps</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
