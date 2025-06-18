@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/apache-commons/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/clean-code/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/collections/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/java/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/null-safety/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/nullpointerexception/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/apache-commons/commons_collections_tutorial/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/string/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/stringutils/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anshusoni.github.io/javaops/tags/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/apt/</loc>
     <lastmod>2025-06-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +45,6 @@
     <lastmod>2025-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/debian/</loc>
-    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/</loc>
     <lastmod>2025-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/posts/keeping-system-clean-debian/</loc>
@@ -32,19 +65,10 @@
     <loc>https://anshusoni.github.io/javaops/tags/system-maintenance/</loc>
     <lastmod>2025-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/</loc>
-    <lastmod>2025-06-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/apache-commons/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/apache-commons/</loc>
-    <lastmod>2025-05-10T10:38:00+05:30</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/file-system/</loc>
-    <lastmod>2025-05-10T10:38:00+05:30</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/java/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/javaops/</loc>
@@ -56,12 +80,6 @@
     <loc>https://anshusoni.github.io/javaops/apache-commons/apache-commons-observing-directory-changes/</loc>
     <lastmod>2025-05-10T10:38:00+05:30</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/clean-code/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/cron/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -71,22 +89,10 @@
     <loc>https://anshusoni.github.io/javaops/tags/linux/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/null-safety/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/nullpointerexception/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/scheduling/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/apache-commons/apache-commons-string-utils/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/string/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://anshusoni.github.io/javaops/tags/stringutils/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://anshusoni.github.io/javaops/tags/sysadmin/</loc>

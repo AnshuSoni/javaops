@@ -6,8 +6,15 @@
     <description>Recent content in Clean Code on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://anshusoni.github.io/javaops/tags/clean-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powering Up Java Collections with Apache Commons Collections</title>
+      <link>https://anshusoni.github.io/javaops/apache-commons/commons_collections_tutorial/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/apache-commons/commons_collections_tutorial/</guid>
+      <description>Handling common Null Pointers Exceptions in Strings, using Apache Commons StringUtils</description>
+    </item>
     <item>
       <title>Streamlining String Operations: Best Practices Using StringUtils in Java</title>
       <link>https://anshusoni.github.io/javaops/apache-commons/apache-commons-string-utils/</link>

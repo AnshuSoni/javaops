@@ -6,8 +6,64 @@
     <description>Recent content in Tags on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://anshusoni.github.io/javaops/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Commons Lang</title>
+      <link>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clean Code</title>
+      <link>https://anshusoni.github.io/javaops/tags/clean-code/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/clean-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collections</title>
+      <link>https://anshusoni.github.io/javaops/tags/collections/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/collections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://anshusoni.github.io/javaops/tags/java/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Null Safety</title>
+      <link>https://anshusoni.github.io/javaops/tags/null-safety/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/null-safety/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nullpointerexception</title>
+      <link>https://anshusoni.github.io/javaops/tags/nullpointerexception/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/nullpointerexception/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>https://anshusoni.github.io/javaops/tags/string/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/string/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stringutils</title>
+      <link>https://anshusoni.github.io/javaops/tags/stringutils/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://anshusoni.github.io/javaops/tags/stringutils/</guid>
+      <description></description>
+    </item>
     <item>
       <title>APT</title>
       <link>https://anshusoni.github.io/javaops/tags/apt/</link>
@@ -51,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Java</title>
-      <link>https://anshusoni.github.io/javaops/tags/java/</link>
-      <pubDate>Sat, 10 May 2025 10:38:00 +0530</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/java/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Javaops</title>
       <link>https://anshusoni.github.io/javaops/tags/javaops/</link>
       <pubDate>Sat, 10 May 2025 10:38:00 +0530</pubDate>
@@ -69,20 +118,6 @@
       <link>https://anshusoni.github.io/javaops/tags/monitoring/</link>
       <pubDate>Sat, 10 May 2025 10:38:00 +0530</pubDate>
       <guid>https://anshusoni.github.io/javaops/tags/monitoring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Apache Commons Lang</title>
-      <link>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/apache-commons-lang/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clean Code</title>
-      <link>https://anshusoni.github.io/javaops/tags/clean-code/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/clean-code/</guid>
       <description></description>
     </item>
     <item>
@@ -107,38 +142,10 @@
       <description></description>
     </item>
     <item>
-      <title>Null Safety</title>
-      <link>https://anshusoni.github.io/javaops/tags/null-safety/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/null-safety/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nullpointerexception</title>
-      <link>https://anshusoni.github.io/javaops/tags/nullpointerexception/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/nullpointerexception/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Scheduling</title>
       <link>https://anshusoni.github.io/javaops/tags/scheduling/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
       <guid>https://anshusoni.github.io/javaops/tags/scheduling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>String</title>
-      <link>https://anshusoni.github.io/javaops/tags/string/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/string/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stringutils</title>
-      <link>https://anshusoni.github.io/javaops/tags/stringutils/</link>
-      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/tags/stringutils/</guid>
       <description></description>
     </item>
     <item>
