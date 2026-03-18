@@ -28,3 +28,8 @@ theme = "javaops-theme"
   name = "Apache Commons"
   url = "/apache-commons/"
   weight = 3
+
+[[menu.main]]
+  name = "Failed Scenarios"
+  url = "/failed-scenarios/"
+  weight = 4
