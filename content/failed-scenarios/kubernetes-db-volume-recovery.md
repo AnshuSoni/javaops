@@ -1,7 +1,7 @@
 ---
-title: "Kubernetes ImagePullBackOff: Fixing Local Docker Image Issues in Minikube"
-date: 2026-04-19T13:00:00Z
-description: "Learn why Kubernetes fails to pull local Docker images and how to fix ImagePullBackOff errors in Minikube."
+title: "Kubernetes PVC and Deployment accidentally deleted: Fixing Postgres Data Loss with PV Recovery"
+date: 2026-04-18T13:00:00Z
+description: "Learn how to recover your PostgreSQL data in Kubernetes after accidentally deleting a Deployment and PVC, using PersistentVolume recovery techniques."
 tags: [Kubernetes, Docker, Troubleshooting]
 categories: [DevOps, Kubernetes]
 ---

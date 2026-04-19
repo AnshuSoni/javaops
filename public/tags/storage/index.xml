@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Storage on JavaOps</title>
-    <link>https://anshusoni.github.io/javaops/tags/storage/</link>
+    <link>http://localhost:1313/javaops/tags/storage/</link>
     <description>Recent content in Storage on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Apr 2025 11:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anshusoni.github.io/javaops/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/javaops/tags/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Multipath and Creating LVM over Multipath Devices</title>
-      <link>https://anshusoni.github.io/javaops/posts/multipath-setup/</link>
+      <link>http://localhost:1313/javaops/posts/multipath-setup/</link>
       <pubDate>Mon, 28 Apr 2025 11:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/multipath-setup/</guid>
+      <guid>http://localhost:1313/javaops/posts/multipath-setup/</guid>
       <description>Learn the basics of multipathing in Linux, and how to create a Logical Volume Manager (LVM) setup over multipath devices for performance and redundancy.</description>
     </item>
   </channel>

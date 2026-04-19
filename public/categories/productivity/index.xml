@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Productivity on JavaOps</title>
-    <link>https://anshusoni.github.io/javaops/categories/productivity/</link>
+    <link>http://localhost:1313/javaops/categories/productivity/</link>
     <description>Recent content in Productivity on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anshusoni.github.io/javaops/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/javaops/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using tmux to Manage Persistent SSH Sessions: Which One Is Better — screen or tmux?</title>
-      <link>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</link>
+      <link>http://localhost:1313/javaops/posts/tmux-vs-screen/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/tmux-vs-screen/</guid>
+      <guid>http://localhost:1313/javaops/posts/tmux-vs-screen/</guid>
       <description>Explore the advantages of using tmux over screen for managing persistent SSH sessions, and learn how to use tmux effectively.</description>
     </item>
   </channel>

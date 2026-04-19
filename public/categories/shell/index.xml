@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shell on JavaOps</title>
-    <link>https://anshusoni.github.io/javaops/categories/shell/</link>
+    <link>http://localhost:1313/javaops/categories/shell/</link>
     <description>Recent content in Shell on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anshusoni.github.io/javaops/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/javaops/categories/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.bashrc vs .bash_profile vs .profile — Explained for Developers</title>
-      <link>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
+      <link>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://anshusoni.github.io/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
+      <guid>http://localhost:1313/javaops/posts/bashrc-vs-bash_profile-vs-profile/</guid>
       <description>Confused about when to use .bashrc, .bash_profile, or .profile? This guide breaks down the difference with examples, so you can finally get your shell configuration right.</description>
     </item>
   </channel>
