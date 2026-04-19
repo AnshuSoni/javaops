@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes ImagePullBackOff: Fixing Local Docker Image Issues in Minikube"
-date: 2025-04-28T13:00:00Z
+date: 2026-03-18T13:00:00Z
 description: "Learn why Kubernetes fails to pull local Docker images and how to fix ImagePullBackOff errors in Minikube."
 tags: [Kubernetes, Docker, Troubleshooting]
 categories: [DevOps, Kubernetes]
