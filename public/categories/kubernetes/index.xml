@@ -6,8 +6,33 @@
     <description>Recent content in Kubernetes on JavaOps</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 13:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/javaops/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Recover Kubernetes Postgres Data After Accidentally Deleting a Deployment and PVC</title>
+      <link>http://localhost:1313/javaops/failed-scenarios/kubernetes-db-volume-recovery/</link>
+      <pubDate>Sat, 18 Apr 2026 13:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/javaops/failed-scenarios/kubernetes-db-volume-recovery/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Kubernetes Disk Recovery&#34; loading=&#34;lazy&#34; src=&#34;../../images/k8s-disk-recovery-hero.svg&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A real-world survival guide with best practices for PersistentVolume and PersistentVolumeClaim management in Kubernetes.&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#1-the-scenario--what-went-wrong&#34;&gt;The Scenario — What Went Wrong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-understanding-pv-pvc-and-the-lifecycle&#34;&gt;Understanding PV, PVC and the Lifecycle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-best-practices-when-declaring-pv-and-pvc&#34;&gt;Best Practices When Declaring PV and PVC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4-setting-up--full-working-manifests&#34;&gt;Setting Up — Full Working Manifests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#5-creating-a-database-in-postgresql&#34;&gt;Creating a Database in PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#6-simulating-the-accident--deleting-deployment-and-pvc&#34;&gt;Simulating the Accident — Deleting Deployment and PVC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#7-recovering-the-data&#34;&gt;Recovering the Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#8-verifying-the-data-is-back&#34;&gt;Verifying the Data is Back&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#9-summary-cheat-sheet&#34;&gt;Summary Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-the-scenario--what-went-wrong&#34;&gt;1. The Scenario — What Went Wrong&lt;/h2&gt;
+&lt;p&gt;You have a PostgreSQL pod running in Kubernetes, backed by a PersistentVolume. One day you (or a teammate) accidentally run:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Kubernetes ImagePullBackOff: Fixing Local Docker Image Issues in Minikube</title>
       <link>http://localhost:1313/javaops/failed-scenarios/kubernetes-imagepullbackoff-minikube/</link>

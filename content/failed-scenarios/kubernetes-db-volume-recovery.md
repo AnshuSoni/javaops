@@ -1,14 +1,13 @@
 ---
-title: "Kubernetes PVC and Deployment accidentally deleted: Fixing Postgres Data Loss with PV Recovery"
+title: "How to Recover Kubernetes Postgres Data After Accidentally Deleting a Deployment and PVC"
 date: 2026-04-18T13:00:00Z
-description: "Learn how to recover your PostgreSQL data in Kubernetes after accidentally deleting a Deployment and PVC, using PersistentVolume recovery techniques."
+# description: "Learn how to recover your PostgreSQL data in Kubernetes after accidentally deleting a Deployment and PVC, using PersistentVolume recovery techniques."
 tags: [Kubernetes, Docker, Troubleshooting]
 categories: [DevOps, Kubernetes]
 ---
-
-# How to Recover Kubernetes Postgres Data After Accidentally Deleting a Deployment and PVC  
-  
+    
 ![Kubernetes Disk Recovery](../../images/k8s-disk-recovery-hero.svg)
+
 
 > **A real-world survival guide with best practices for PersistentVolume and PersistentVolumeClaim management in Kubernetes.**  
   
@@ -33,7 +32,9 @@ categories: [DevOps, Kubernetes]
 You have a PostgreSQL pod running in Kubernetes, backed by a PersistentVolume. One day you (or a teammate) accidentally run:  
   
 ```bash  
-kubectl delete deployment db-deployment -n ckakubectl delete pvc db-pvc -n cka```  
+kubectl delete deployment db-deployment -n cka
+kubectl delete pvc db-pvc -n cka
+```  
   
 💥 The pod is gone. The PVC is gone. Your database seems lost.  
   
@@ -53,8 +54,15 @@ A PVC is a *request* for storage by a user. It binds to a PV. Think of it as plu
   
 ### The Binding Lifecycle  
   
-```  
-PV (Available) → PVC created → PV (Bound) → Pod uses PVC → Pod/PVC deleted → PV (Released or Deleted)  
+```mermaid
+flowchart LR
+    classDef default fill:#326ce5,stroke:#ffffff,stroke-width:2px,color:#ffffff;
+    
+    A["PV (Available)"] --> B["PVC created"]
+    B --> C["PV (Bound)"]
+    C --> D["Pod uses PVC"]
+    D --> E["Pod/PVC deleted"]
+    E --> F["PV (Released or Deleted)"]
 ```  
   
 ### Reclaim Policies — The Critical Setting  
@@ -90,7 +98,8 @@ spec:
   
 ```yaml  
 hostPath:  
- path: "/data/db" type: DirectoryOrCreate  
+ path: "/data/db" 
+ type: DirectoryOrCreate  
 ```  
   
 ### ✅ DO: Match `storageClassName` exactly between PV and PVC  
@@ -126,34 +135,83 @@ Postgres 18+ changed its data directory layout. The volume must be mounted at th
 kind: PersistentVolume  
 apiVersion: v1  
 metadata:  
- name: db-pvspec:  
- capacity: storage: 1Gi accessModes: - ReadWriteOnce persistentVolumeReclaimPolicy: Retain          # ✅ Data survives PVC deletion storageClassName: standard hostPath: path: "/mnt/c/CKA" type: DirectoryOrCreate---  
+ name: db-pv
+spec:  
+capacity: 
+    storage: 1Gi 
+accessModes: 
+ - ReadWriteOnce
+persistentVolumeReclaimPolicy: Retain          # ✅ Data survives PVC deletion 
+storageClassName: standard 
+hostPath: 
+    path: "/mnt/c/CKA" 
+    type: DirectoryOrCreate
+---  
 apiVersion: v1  
 kind: PersistentVolumeClaim  
 metadata:  
- name: db-pvc namespace: ckaspec:  
- accessModes: - ReadWriteOnce resources: requests: storage: 1Gi storageClassName: standard volumeName: db-pv                              # ✅ Bind explicitly to our PV  
+  name: db-pvc 
+  namespace: cka
+spec:  
+  accessModes: 
+   - ReadWriteOnce
+  resources:
+   requests:
+    storage: 1Gi
+  storageClassName: standard
+  volumeName: db-pv                              # ✅ Bind explicitly to our PV  
 ```  
   
 ### `db-deployment.yaml`  
   
 ```yaml  
-apiVersion: apps/v1  
-kind: Deployment  
-metadata:  
- name: db-deployment namespace: ckaspec:  
- replicas: 1 selector: matchLabels: app: db template: metadata: labels: app: db spec: containers: - name: db-container image: postgres:18                     # ✅ Pinned image tag ports: - containerPort: 5432 env: - name: POSTGRES_USER value: "admin" - name: POSTGRES_PASSWORD value: "password" - name: POSTGRES_DB value: "mydatabase" volumeMounts: - name: db-storage mountPath: /var/lib/postgresql     # ✅ Parent path for Postgres 18+ volumes: - name: db-storage persistentVolumeClaim: claimName: db-pvc  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-deployment
+  namespace: cka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:18              # ✅ Pinned image tag
+        env:
+        - name: POSTGRES_USER
+          value: admin
+        - name: POSTGRES_PASSWORD
+          value: password
+        - name: POSTGRES_DB
+          value: mydatabase
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: db-storage
+          mountPath: /var/lib/postgresql          # ✅ Parent path for Postgres 18+ 
+      volumes:
+      - name: db-storage
+        persistentVolumeClaim:
+          claimName: db-pvc  
 ```  
   
 Apply both:  
   
 ```bash  
-kubectl apply -f db-volumes.yamlkubectl apply -f db-deployment.yaml```  
+kubectl apply -f db-volumes.yamlkubectl apply -f db-deployment.yaml
+```  
   
 Verify the PVC binds to **your** PV (not a dynamically provisioned one):  
   
 ```bash  
-kubectl get pvc,pv -n cka```  
+kubectl get pvc,pv -n cka
+```  
   
 Expected output:  
   
@@ -180,7 +238,8 @@ kubectl get pods -n cka -l app=db
 ### Step 2 — Open an interactive psql shell  
   
 ```bash  
-kubectl exec -it deploy/db-deployment -n cka -- psql -U admin -d mydatabase -W```  
+kubectl exec -it deploy/db-deployment -n cka -- psql -U admin -d mydatabase -W
+```  
   
 You'll be prompted for the password (`password`).  
   
@@ -200,7 +259,9 @@ Output:
   
 ```  
  Name     |  Owner------------+---------  
- db1        | admin ✅ newly created mydatabase | admin ✅ auto-created at init postgres   | postgres```  
+ db1        | admin ✅ newly created 
+ mydatabase | admin ✅ auto-created at init postgres   | postgres
+```  
   
 ### Step 5 — Exit psql  
   
@@ -211,19 +272,22 @@ Output:
 ### One-liner (non-interactive)  
   
 ```bash  
-kubectl exec deploy/db-deployment -n cka -- psql -U admin -d mydatabase -c "CREATE DATABASE db1;"```  
+kubectl exec deploy/db-deployment -n cka -- psql -U admin -d mydatabase -c "CREATE DATABASE db1;"
+```  
   
 ---  
   
 ## 6. Simulating the Accident — Deleting Deployment and PVC  
   
 ```bash  
-kubectl delete deployment db-deployment -n ckakubectl delete pvc db-pvc -n cka```  
+kubectl delete deployment db-deployment -n ckakubectl delete pvc db-pvc -n cka
+```  
   
 Now check the PV:  
   
 ```bash  
-kubectl get pv```  
+kubectl get pv
+```  
   
 ```  
 NAME    CAPACITY   RECLAIM POLICY   STATUS     CLAIM  
@@ -253,13 +317,20 @@ kubectl patch pv db-pv --type=json -p='[{"op": "remove", "path": "/spec/claimRef
 **Option B — Manual edit (interactive, great for learning):**  
   
 ```bash  
-kubectl edit pv db-pv```  
+kubectl edit pv db-pv
+```  
   
 This opens the PV manifest in your default editor. Find and **delete** the entire `claimRef` block:  
   
 ```yaml  
 # DELETE these lines:  
- claimRef: apiVersion: v1 kind: PersistentVolumeClaim name: db-pvc namespace: cka resourceVersion: "12345" uid: d91938f6-66cf-4c0a-b55f-f501e4d5bcfb  
+ claimRef: 
+   apiVersion: v1
+   kind: PersistentVolumeClaim 
+   name: db-pvc 
+   namespace: cka 
+   resourceVersion: "12345" 
+   uid: d91938f6-66cf-4c0a-b55f-f501e4d5bcfb  
 ```  
   
 Save and close the editor. Kubernetes will immediately update the PV.  
@@ -269,7 +340,8 @@ Save and close the editor. Kubernetes will immediately update the PV.
 ### Step 2 — Verify PV is `Available`  
   
 ```bash  
-kubectl get pv db-pv```  
+kubectl get pv db-pv
+```  
   
 ```  
 NAME    CAPACITY   RECLAIM POLICY   STATUS      CLAIM  
@@ -279,12 +351,14 @@ db-pv   1Gi        Retain           Available
 ### Step 3 — Re-apply PVC and Deployment  
   
 ```bash  
-kubectl apply -f db-volumes.yamlkubectl apply -f db-deployment.yaml```  
+kubectl apply -f db-volumes.yamlkubectl apply -f db-deployment.yaml
+```  
   
 ### Step 4 — Watch the rollout  
   
 ```bash  
-kubectl -n cka rollout status deployment/db-deployment```  
+kubectl -n cka rollout status deployment/db-deployment
+```  
   
 ---  
   
@@ -293,7 +367,8 @@ kubectl -n cka rollout status deployment/db-deployment```
 Connect to Postgres and confirm your databases survived:  
   
 ```bash  
-kubectl exec -it deploy/db-deployment -n cka -- psql -U admin -d mydatabase -W```  
+kubectl exec -it deploy/db-deployment -n cka -- psql -U admin -d mydatabase -W
+```  
   
 Inside psql:  
   
@@ -303,7 +378,9 @@ Inside psql:
   
 ```  
  Name     |  Owner------------+---------  
- db1        | admin ✅ Still here! mydatabase | admin ✅ Still here!```  
+ db1        | admin ✅ Still here! 
+ mydatabase | admin ✅ Still here!
+ ```  
   
 Switch to a specific database and check tables:  
   
