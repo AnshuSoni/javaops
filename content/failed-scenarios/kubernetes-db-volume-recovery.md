@@ -69,23 +69,23 @@ flowchart LR
   
 | Policy | What happens when PVC is deleted |  
 |--------|----------------------------------|  
-| `Retain` | ✅ PV survives, data is safe — manual cleanup required |  
-| `Delete` | ❌ PV and underlying storage are deleted automatically |  
-| `Recycle` | ⚠️ Deprecated — basic scrub, makes PV available again |  
+| `Retain` | PV survives, `data is safe` — manual cleanup required |  
+| `Delete` | PV and underlying storage are deleted automatically |  
+| `Recycle` | Deprecated — basic scrub, makes PV available again |  
   
-> 🔑 **Golden Rule:** Always use `Retain` for production or important data.  
+>  **Golden Rule:** Always use `Retain` for production or important data.  
   
 ---  
   
 ## 3. Best Practices When Declaring PV and PVC  
   
-### ✅ DO: Use `Retain` Reclaim Policy  
+###  DO: Use `Retain` Reclaim Policy  
   
 ```yaml  
 persistentVolumeReclaimPolicy: Retain  
 ```  
   
-### ✅ DO: Pin the PVC to a specific PV using `volumeName`  
+###  DO: Pin the PVC to a specific PV using `volumeName`  
   
 Without this, Kubernetes will bind your PVC to any available matching PV — including dynamically provisioned ones you didn't intend. Always be explicit:  
   
@@ -94,7 +94,7 @@ spec:
  volumeName: db-pv   # ← Force bind to your specific PV  
 ```  
   
-### ✅ DO: Use explicit `hostPath.type`  
+###  DO: Use explicit `hostPath.type`  
   
 ```yaml  
 hostPath:  
@@ -102,27 +102,27 @@ hostPath:
  type: DirectoryOrCreate  
 ```  
   
-### ✅ DO: Match `storageClassName` exactly between PV and PVC  
+###  DO: Match `storageClassName` exactly between PV and PVC  
   
 ```yaml  
 # Both PV and PVC must have:  
 storageClassName: standard  
 ```  
   
-### ✅ DO: Pin your image tag — never use `latest` for stateful workloads  
+###  DO: Pin your image tag — never use `latest` for stateful workloads  
   
 ```yaml  
-image: postgres:18   # ✅ Pinned# image: postgres:latest ❌ Dangerous — can pull a breaking major version  
+image: postgres:18   #  Pinned # image: postgres:latest is Dangerous — can pull a breaking major version  
 ```  
   
-### ❌ DON'T: Mount at `/var/lib/postgresql/data` with Postgres 18+  
+###  DON'T: Mount at `/var/lib/postgresql/data` with Postgres 18+  
   
 Postgres 18+ changed its data directory layout. The volume must be mounted at the **parent** directory:  
   
 ```yaml  
-# ❌ Broken for Postgres 18+mountPath: /var/lib/postgresql/data  
+#  Broken for Postgres 18+mountPath: /var/lib/postgresql/data  
   
-# ✅ Correct for Postgres 18+mountPath: /var/lib/postgresql  
+#  Correct for Postgres 18+mountPath: /var/lib/postgresql  
 ```  
   
 ---  
@@ -141,7 +141,7 @@ capacity:
     storage: 1Gi 
 accessModes: 
  - ReadWriteOnce
-persistentVolumeReclaimPolicy: Retain          # ✅ Data survives PVC deletion 
+persistentVolumeReclaimPolicy: Retain          # Data survives PVC deletion 
 storageClassName: standard 
 hostPath: 
     path: "/mnt/c/CKA" 
@@ -159,7 +159,7 @@ spec:
    requests:
     storage: 1Gi
   storageClassName: standard
-  volumeName: db-pv                              # ✅ Bind explicitly to our PV  
+  volumeName: db-pv                              #  Bind explicitly to our PV  
 ```  
   
 ### `db-deployment.yaml`  
@@ -182,7 +182,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:18              # ✅ Pinned image tag
+        image: postgres:18              #  Pinned image tag
         env:
         - name: POSTGRES_USER
           value: admin
@@ -194,7 +194,7 @@ spec:
         - containerPort: 5432
         volumeMounts:
         - name: db-storage
-          mountPath: /var/lib/postgresql          # ✅ Parent path for Postgres 18+ 
+          mountPath: /var/lib/postgresql          # Parent path for Postgres 18+ 
       volumes:
       - name: db-storage
         persistentVolumeClaim:
@@ -294,8 +294,8 @@ NAME    CAPACITY   RECLAIM POLICY   STATUS     CLAIM
 db-pv   1Gi        Retain           Released   cka/db-pvc  
 ```  
   
-- Status is `Released` — **not deleted** ✅  
-- Data is still on disk at `/mnt/c/CKA` ✅  
+- Status is `Released` — **not deleted**   
+- Data is still on disk at `/mnt/c/CKA`   
 - But it cannot be claimed by a new PVC yet ⚠️  
   
 ---  
@@ -408,7 +408,7 @@ SELECT * FROM your_table;
   
 | PV Status after PVC deleted | Data Safe? |  
 |-----------------------------|------------|  
-| `Released` | ✅ Yes — PV still exists, recover using steps below |  
+| `Released` |  Yes — PV still exists, recover using steps below |  
 | `Deleted` | ❌ No — underlying storage was wiped |  
   
 ### Recovery Steps  
