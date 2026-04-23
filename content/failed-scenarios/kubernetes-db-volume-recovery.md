@@ -280,7 +280,8 @@ kubectl exec deploy/db-deployment -n cka -- psql -U admin -d mydatabase -c "CREA
 ## 6. Simulating the Accident — Deleting Deployment and PVC  
   
 ```bash  
-kubectl delete deployment db-deployment -n ckakubectl delete pvc db-pvc -n cka
+kubectl delete deployment db-deployment -n cka
+kubectl delete pvc db-pvc -n cka
 ```  
   
 Now check the PV:  
