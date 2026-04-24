@@ -136,14 +136,14 @@ kind: PersistentVolume
 apiVersion: v1  
 metadata:  
  name: db-pv
-spec:  
-capacity: 
+spec:
+  capacity: 
     storage: 1Gi 
-accessModes: 
- - ReadWriteOnce
-persistentVolumeReclaimPolicy: Retain          # Data survives PVC deletion 
-storageClassName: standard 
-hostPath: 
+  accessModes: 
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain          # Data survives PVC deletion 
+  storageClassName: standard 
+  hostPath: 
     path: "/mnt/c/CKA" 
     type: DirectoryOrCreate
 ---  
