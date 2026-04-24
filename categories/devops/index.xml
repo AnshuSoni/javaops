@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DevOps on JavaOps</title><link>https://anshusoni.github.io/javaops/categories/devops/</link><description>Recent content in DevOps on JavaOps</description><generator>Hugo -- 0.145.0</generator><language>en-us</language><lastBuildDate>Sat, 18 Apr 2026 13:00:00 +0000</lastBuildDate><atom:link href="https://anshusoni.github.io/javaops/categories/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Recover Kubernetes Postgres Data After Accidentally Deleting a Deployment and PVC</title><link>https://anshusoni.github.io/javaops/failed-scenarios/kubernetes-db-volume-recovery/</link><pubDate>Sat, 18 Apr 2026 13:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/failed-scenarios/kubernetes-db-volume-recovery/</guid><description>&lt;p>&lt;img alt="Kubernetes Disk Recovery" loading="lazy" src="../../images/k8s-disk-recovery-hero.svg">&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A real-world survival guide with best practices for PersistentVolume and PersistentVolumeClaim management in Kubernetes.&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#1-the-scenario--what-went-wrong">The Scenario — What Went Wrong&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#2-understanding-pv-pvc-and-the-lifecycle">Understanding PV, PVC and the Lifecycle&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-best-practices-when-declaring-pv-and-pvc">Best Practices When Declaring PV and PVC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#4-setting-up--full-working-manifests">Setting Up — Full Working Manifests&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-creating-a-database-in-postgresql">Creating a Database in PostgreSQL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#6-simulating-the-accident--deleting-deployment-and-pvc">Simulating the Accident — Deleting Deployment and PVC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#7-recovering-the-data">Recovering the Data&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#8-verifying-the-data-is-back">Verifying the Data is Back&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#9-summary-cheat-sheet">Summary Cheat Sheet&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="1-the-scenario--what-went-wrong">1. The Scenario — What Went Wrong&lt;/h2>
+&lt;p>You have a PostgreSQL pod running in Kubernetes, backed by a PersistentVolume. One day you (or a teammate) accidentally run:&lt;/p></description></item><item><title>Kubernetes ImagePullBackOff: Fixing Local Docker Image Issues in Minikube</title><link>https://anshusoni.github.io/javaops/failed-scenarios/kubernetes-imagepullbackoff-minikube/</link><pubDate>Wed, 18 Mar 2026 13:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/failed-scenarios/kubernetes-imagepullbackoff-minikube/</guid><description>Learn why Kubernetes fails to pull local Docker images and how to fix ImagePullBackOff errors in Minikube.</description></item><item><title>Quick Intro to iostat, vmstat, and netstat for Performance Checks</title><link>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</link><pubDate>Mon, 28 Apr 2025 10:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/posts/vmstat-iostat-ss/</guid><description>Learn how to quickly use iostat, vmstat, and netstat to perform basic system performance checks.</description></item><item><title>Init Systems in Containers: Why systemd Isn’t Always There</title><link>https://anshusoni.github.io/javaops/posts/init-systems-in-containers/</link><pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate><guid>https://anshusoni.github.io/javaops/posts/init-systems-in-containers/</guid><description>Why most Docker containers don’t run systemd and what that means for process management inside containers.</description></item></channel></rss>
